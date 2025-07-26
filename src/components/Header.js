@@ -20,8 +20,9 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { Separator } from "@/components/ui/separator"
-import { Menu, Heart } from "lucide-react"
+import { Menu } from "lucide-react"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -30,22 +31,22 @@ export default function Header() {
     {
       title: "홈",
       href: "/",
-      description: "따뜻한 시작을 함께해요."
+      description: "🏡 따뜻한 시작을 함께해요."
     },
     {
       title: "솔루션",
       href: "/solution",
-      description: "우리의 상담 서비스를 알아보세요."
+      description: "🧑🏻‍💻 우리의 상담 서비스를 알아보세요."
     },
     {
-      title: "전문가팀",
+      title: "셸비 팀",
       href: "/team",
-      description: "뭐든지 해내는 우리 팀을 만나보세요."
+      description: "🎉 뭐든지 해내는 우리 팀을 만나보세요."
     },
     {
       title: "소식",
       href: "/news",
-      description: "셸비가 전해 온 따끈따끈한 정보를 받아보세요."
+      description: "🐢 셸비가 전해 온 따끈따끈한 정보를 받아보세요."
     }
   ]
 
@@ -54,10 +55,16 @@ export default function Header() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* 로고 섹션 */}
         <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-          <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-orange-400 to-pink-400 rounded-lg">
-            <Heart className="w-4 h-4 text-white fill-white" />
+          <div>
+            <Image 
+            src="/shellby.png"
+            alt="셸비 로고"
+            width={36}
+            height={36}
+            className="rounded-md"
+            ></Image>
           </div>
-          <span className="font-bold text-xl text-gray-800">
+          <span className="font-bold text-xl">
             셸비
           </span>
         </Link>
@@ -77,6 +84,8 @@ export default function Header() {
           </NavigationMenuList>
         </NavigationMenu>
 
+        {/* CTA 버튼 제거 - 더 깔끔한 헤더 */}
+
         {/* 모바일 메뉴 버튼 */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
@@ -88,13 +97,19 @@ export default function Header() {
           <SheetContent side="right" className="w-[300px] bg-white">
             <SheetHeader className="text-left">
               <SheetTitle className="flex items-center space-x-2">
-                <div className="flex items-center justify-center w-6 h-6 bg-gradient-to-br from-orange-400 to-pink-400 rounded-md">
-                  <Heart className="w-3 h-3 text-white fill-white" />
+                <div>
+                    <Image 
+                    src="/shellby.png"
+                    alt="셸비 로고"
+                    width={36}
+                    height={36}
+                    className="rounded-md"
+                    ></Image>
                 </div>
                 <span className="text-gray-800">셸비</span>
               </SheetTitle>
               <SheetDescription className="text-gray-600">
-                느린학습자와 가족을 위한 따뜻한 상담 서비스
+                느린학습자와 가족을 위한 비대면 상담 서비스
               </SheetDescription>
             </SheetHeader>
             
