@@ -51,7 +51,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-orange-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="sticky top-0 z-50 w-full border-b border-green-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* 로고 섹션 */}
         <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
