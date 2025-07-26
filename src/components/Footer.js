@@ -32,6 +32,11 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-gray-800">서비스</h3>
             <ul className="space-y-2">
+                <li>
+                <Link href="/solution" className="text-sm text-gray-600 hover:text-orange-600 transition-colors">
+                  솔루션
+                </Link>
+              </li>
               <li>
                 <Link href="/news" className="text-sm text-gray-600 hover:text-orange-600 transition-colors">
                   소식
@@ -53,7 +58,7 @@ export default function Footer() {
           </div>
 
           {/* 회사 정보 */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="font-semibold text-gray-800">회사 정보</h3>
             <ul className="space-y-2">
               <li>
@@ -67,7 +72,7 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <Separator className="my-8 bg-gray-200" />
