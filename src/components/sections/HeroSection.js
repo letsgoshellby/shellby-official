@@ -54,7 +54,7 @@ export default function HeroSection() {
               </Badge>
               <Badge variant="outline" className="border-pink-200 text-pink-700">
                 <Star className="w-3 h-3 mr-1 fill-current" />
-                2024 런칭
+                2025 런칭
               </Badge>
             </div>
 
