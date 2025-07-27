@@ -105,47 +105,19 @@ export default function TeamHeroSection() {
           {/* 이미지/비주얼 영역 */}
           <div className="relative">
             {/* 메인 팀 사진 영역 */}
-            <div className="relative mx-auto max-w-md lg:max-w-lg">
-              <Card className="bg-white shadow-2xl border-0 overflow-hidden">
-                <CardContent className="p-0">
+            <div className="relative mx-auto max-w-xs lg:max-w-sm">
+              <div className="  border-0">
+                <div className="p-0">
                   {/* 임시 팀 사진 영역 - 실제 사진으로 교체 */}
-                  <div className="relative h-80 bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 flex items-center justify-center">
+                  <div className="relative flex items-center justify-center">
                     <div className="text-center space-y-4">
-                      <div className="grid grid-cols-3 gap-3">
-                        {[...Array(5)].map((_, i) => (
-                          <div 
-                            key={i} 
-                            className={`w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center ${
-                              i === 2 ? 'col-start-2' : ''
-                            }`}
-                          >
-                            <Users className="w-6 h-6 text-white" />
-                          </div>
-                        ))}
-                      </div>
                       <div className="space-y-2">
-                        <h3 className="text-lg font-bold text-gray-800">셸비 팀</h3>
-                        <p className="text-sm text-gray-600">
-                          여기에 팀 단체 사진이<br />
-                          들어갈 예정이에요! 📸
-                        </p>
+                        <img src="/team_together.png" className="">
+                        </img>
                       </div>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-
-              {/* 플로팅 요소들 */}
-              <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-blue-200 to-purple-200 rounded-2xl flex items-center justify-center shadow-lg backdrop-blur-sm">
-                <GraduationCap className="w-8 h-8 text-blue-600" />
-              </div>
-              
-              <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-purple-200 to-pink-200 rounded-xl flex items-center justify-center shadow-lg backdrop-blur-sm">
-                <Heart className="w-6 h-6 text-purple-600 fill-current animate-pulse" />
-              </div>
-
-              <div className="absolute top-1/2 -left-8 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
-                <Lightbulb className="w-6 h-6 text-yellow-500" />
+                </div>
               </div>
             </div>
           </div>
