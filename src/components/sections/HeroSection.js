@@ -62,15 +62,16 @@ export default function HeroSection() {
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 느린학습자와 가족을 위한{" "}
+                <br className=" block" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
                   전문 상담
                 </span>이{" "}
-                <br className="hidden lg:block" />
+                <br className=" block" />
                 이제 집에서도
               </h1>
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
                 신뢰할 수 있는 전문가와의 1:1 맞춤 상담을{" "}
-                <br className="hidden lg:block" />
+                <br className=" block" />
                 스마트폰으로 편안하게 받아보세요
               </p>
             </div>
@@ -138,8 +139,6 @@ export default function HeroSection() {
               
               {/* 추가 정보 */}
               <div className="flex items-center space-x-4 text-sm text-gray-500">
-                <span>✨ 첫 상담 무료 체험</span>
-                <span>•</span>
                 <span>📱 iOS & Android 지원</span>
               </div>
             </div>

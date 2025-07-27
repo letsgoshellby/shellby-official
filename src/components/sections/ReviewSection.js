@@ -100,21 +100,21 @@ export default function ReviewsSection() {
             {/* 통계 정보 */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               <div className="text-center space-y-2">
-                <div className="text-3xl lg:text-4xl font-bold text-orange-500">4.8</div>
+                <div className="text-3xl lg:text-4xl font-bold text-orange-500">5.0</div>
                 <div className="flex justify-center space-x-1 mb-2">
                   {renderStars(5)}
                 </div>
                 <p className="text-gray-600 text-sm">평균 만족도</p>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-3xl lg:text-4xl font-bold text-pink-500">1,200+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-pink-500">0+</div>
                 <div className="flex justify-center">
                   <Users className="w-5 h-5 text-pink-500" />
                 </div>
                 <p className="text-gray-600 text-sm">이용 가족 수</p>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-3xl lg:text-4xl font-bold text-orange-500">95%</div>
+                <div className="text-3xl lg:text-4xl font-bold text-orange-500">100%</div>
                 <div className="flex justify-center">
                   <Heart className="w-5 h-5 text-orange-500 fill-current" />
                 </div>
@@ -222,14 +222,9 @@ export default function ReviewsSection() {
                 </h3>
                 <p className="text-lg opacity-90 leading-relaxed">
                   셸비와 함께한 특별한 순간들이 다른 가족들에게도
-                  <br className="hidden sm:block" />
-                  큰 힘과 용기가 될 수 있어요
+                  <br className="block" />
+                  큰 힘과 용기가 될 수 있어요!
                 </p>
-                <div className="pt-4">
-                  <p className="text-sm opacity-80">
-                    앱에서 상담 후 후기를 남겨주시면 감사 포인트를 드려요! 🎁
-                  </p>
-                </div>
               </div>
             </div>
           </>

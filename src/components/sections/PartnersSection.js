@@ -62,8 +62,8 @@ export default function PartnersSection() {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             셸비는 엄선된 의료기관, 교육센터, 치료기관과 협력하여 
-            <br className="hidden sm:block" />
-            최고 수준의 전문 상담 서비스를 제공합니다
+            <br className="block" />
+            최고 수준의 전문 상담 서비스를 제공합니다.
           </p>
         </div>
 
@@ -139,7 +139,9 @@ export default function PartnersSection() {
               전문가 네트워크의 힘
             </h3>
             <p className="text-lg text-gray-600">
-              다양한 분야의 전문기관과의 협력으로 더욱 체계적인 상담 서비스를 제공합니다
+              다양한 분야의 전문기관과의 협력으로
+              <br className="block" />
+              더욱 체계적인 상담 서비스를 제공합니다.
             </p>
           </div>
 
@@ -148,9 +150,9 @@ export default function PartnersSection() {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-500 rounded-2xl flex items-center justify-center mx-auto">
                 <Building2 className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900">의료진 협력</h4>
+              <h4 className="text-lg font-semibold text-gray-900">전문가와의 협력</h4>
               <p className="text-gray-600 text-sm leading-relaxed">
-                대학병원 및 전문 의료기관과의 협력으로 의학적 기반의 상담 서비스
+                전문 상담 기관과의 협력으로 신뢰도가 높은 상담 서비스
               </p>
             </div>
 
@@ -158,9 +160,9 @@ export default function PartnersSection() {
               <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-500 rounded-2xl flex items-center justify-center mx-auto">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900">교육 전문성</h4>
+              <h4 className="text-lg font-semibold text-gray-900">개인 맞춤형 상담</h4>
               <p className="text-gray-600 text-sm leading-relaxed">
-                특수교육 및 학습치료 전문기관과의 파트너십으로 맞춤형 교육 솔루션
+                특수교육 및 학습치료 전문기관과의 파트너십으로 맞춤형 솔루션 추천
               </p>
             </div>
 
@@ -168,9 +170,9 @@ export default function PartnersSection() {
               <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900">품질 보증</h4>
+              <h4 className="text-lg font-semibold text-gray-900">가격 혁신</h4>
               <p className="text-gray-600 text-sm leading-relaxed">
-                엄격한 자격 심사와 지속적인 교육을 통한 최고 수준의 서비스 품질
+                경쟁 서비스와 대비하여 가격은 낮게, 품질은 최고로
               </p>
             </div>
           </div>
