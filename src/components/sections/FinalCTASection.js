@@ -70,7 +70,7 @@ export default function FinalCTASection() {
     },
     {
       icon: Gift,
-      title: "첫 상담 무료",
+      title: "합리적인 가격",
       description: "부담 없이 시작해보세요"
     }
   ]
@@ -185,15 +185,15 @@ export default function FinalCTASection() {
               <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm opacity-90">
                 <div className="flex items-center space-x-2">
                   <Star className="w-4 h-4 fill-current" />
-                  <span>4.8/5.0 평점</span>
+                  <span>5.0/5.0 평점</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Download className="w-4 h-4" />
-                  <span>1,200+ 다운로드</span>
+                  <span>0+ 다운로드</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Heart className="w-4 h-4 fill-current" />
-                  <span>95% 만족도</span>
+                  <span>100% 만족도</span>
                 </div>
               </div>
             </div>
@@ -258,10 +258,6 @@ export default function FinalCTASection() {
                 <div className="flex items-center space-x-2">
                   <Clock className="w-4 h-4" />
                   <span className="text-sm">평균 응답시간 5분</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Gift className="w-4 h-4" />
-                  <span className="text-sm">오늘만 첫 상담 무료</span>
                 </div>
               </div>
             </CardContent>

@@ -87,7 +87,7 @@ export default function NewsSection() {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             서비스 업데이트부터 느린학습자를 위한 유용한 팁까지,
-            <br className="hidden sm:block" />
+            <br className="block" />
             셸비가 전하는 따뜻한 정보들을 만나보세요
           </p>
         </div>
@@ -215,13 +215,13 @@ export default function NewsSection() {
               셸비 소식을 놓치지 마세요
             </h3>
             <p className="text-lg opacity-90 leading-relaxed">
-              새로운 기능 업데이트와 느린학습자를 위한 전문가 팁을
-              <br className="hidden sm:block" />
-              가장 먼저 받아보실 수 있습니다
+              셸비 앱에서는 느린학습자를 위한 전문가 칼럼을
+              <br className="block" />
+              가장 먼저 받아보실 수 있습니다!
             </p>
             <div className="pt-4">
               <p className="text-sm opacity-80">
-                앱을 다운로드하시면 푸시 알림으로 새 소식을 받아보실 수 있어요! 📱
+                앱을 다운로드하시면 푸시 알림으로 새 칼럼을 받아보실 수 있어요 📱
               </p>
             </div>
           </div>
