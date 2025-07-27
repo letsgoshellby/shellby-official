@@ -101,7 +101,7 @@ export default function Footer() {
           {/* 사업자 정보 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600">
             <div className="space-y-1">
-              <p><span className="font-medium">상호:</span> (주)셸비</p>
+              <p><span className="font-medium">상호:</span> 셸비</p>
               <p><span className="font-medium">대표자:</span> 전민경</p>
               <p><span className="font-medium">사업자등록번호:</span> 274-14-02663</p>
               {/* <p>
