@@ -32,9 +32,9 @@ export default function TeamMembersSection() {
     {
       id: 1,
       name: "전민경",
-      role: "CEO & 기획",
-      major: "교육대학원",
-      university: "연세대학교",
+      role: "CEO 및 기획",
+      major: "",
+      university: "연세대학교 교육대학원",
       mbti: "OOOO",
       avatar: null, // 실제 사진 URL로 교체
       mainColor: "from-blue-400 to-blue-500",
@@ -58,8 +58,8 @@ export default function TeamMembersSection() {
       id: 2,
       name: "이아영",
       role: "마케팅",
-      major: "특수교육과",
-      university: "이화여자대학교",
+      major: "",
+      university: "이화여자대학교 특수교육과",
       mbti: "OOOO",
       avatar: null,
       mainColor: "from-green-400 to-green-500",
@@ -83,8 +83,8 @@ export default function TeamMembersSection() {
       id: 3,
       name: "정현주",
       role: "CTO 및 PM",
-      major: "소프트웨어학부",
-      university: "국민대학교",
+      major: "",
+      university: "국민대학교 소프트웨어학부",
       mbti: "OOOO",
       avatar: null,
       mainColor: "from-pink-400 to-pink-500",
@@ -108,8 +108,8 @@ export default function TeamMembersSection() {
       id: 4,
       name: "조원재",
       role: "백엔드 및 서버 개발",
-      major: "소프트웨어학부",
-      university: "국민대학교",
+      major: "",
+      university: "국민대학교 소프트웨어학부",
       mbti: "OOOO",
       avatar: null,
       mainColor: "from-purple-400 to-purple-500",
@@ -133,8 +133,8 @@ export default function TeamMembersSection() {
       id: 5,
       name: "전성호",
       role: "프론트엔드 개발",
-      major: "컴퓨터과학과",
-      university: "한국뉴욕주립대학교",
+      major: "",
+      university: "한국뉴욕주립대학교 컴퓨터과학과",
       mbti: "OOOO",
       avatar: null,
       mainColor: "from-orange-400 to-orange-500",
@@ -218,7 +218,6 @@ export default function TeamMembersSection() {
                     <div className="text-center space-y-2">
                       <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
                       <p className="text-sm font-medium text-gray-600">{member.role}</p>
-                      <p className="text-xs text-gray-500">{member.major}</p>
                       <p className="text-xs text-gray-500">{member.university}</p>
                     </div>
 
