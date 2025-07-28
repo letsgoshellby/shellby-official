@@ -219,7 +219,7 @@ export default function TeamMembersSection() {
                             </Button>
                             {member.github_username && (
                               <Button size="sm" variant="outline" className="text-xs">
-                                <Linkedin className="w-3 h-3 mr-1" />
+                                <Github className="w-3 h-3 mr-1" />
                                 {member.github_username}
                               </Button>
                             )}
