@@ -139,8 +139,7 @@ export default function TeamMembersSection() {
                     <div className="text-center space-y-2">
                       <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
                       <p className="text-sm font-medium text-gray-600">{member.role}</p>
-                      <p className="text-xs text-gray-500">{member.major}</p>
-                      <p className="text-xs text-gray-500">{member.university}</p>
+                      <p className="text-xs text-gray-500">{member.university} {member.major}</p>
                     </div>
 
                     {/* 한 줄 소개 */}
@@ -183,30 +182,6 @@ export default function TeamMembersSection() {
                     {/* 확장된 정보 */}
                     {isExpanded && (
                       <div className="space-y-4 pt-4 border-t border-gray-100 animate-in slide-in-from-top-2">
-                        {/* 취미 */}
-                        <div>
-                          <h4 className="text-sm font-semibold text-gray-800 mb-2 flex items-center">
-                            <Heart className="w-4 h-4 mr-1 text-pink-500" />
-                            취미
-                          </h4>
-                          <div className="flex flex-wrap gap-1">
-                            {member.hobbies.map((hobby, index) => (
-                              <Badge key={index} variant="outline" className="text-xs">
-                                {hobby}
-                              </Badge>
-                            ))}
-                          </div>
-                        </div>
-
-                        {/* TMI */}
-                        <div className="space-y-2">
-                          <div className="flex items-center justify-between text-xs text-gray-600">
-                            <span>💛 좋아하는 음식: {member.fav_food}</span>
-                          </div>
-                          <div className="flex items-center justify-between text-xs text-gray-600">
-                            <span>🎬 좋아하는 영화: {member.fav_movie}</span>
-                          </div>
-                        </div>
 
                         {/* 명언 */}
                         <div className="bg-gradient-to-r from-orange-50 to-pink-50 rounded-lg p-3">
@@ -242,22 +217,22 @@ export default function TeamMembersSection() {
                               <Mail className="w-3 h-3 mr-1" />
                               이메일
                             </Button>
-                            {member.contact.github_username && (
-                              <Button size="sm" variant="outline" className="text-xs">
-                                <Github className="w-3 h-3 mr-1" />
-                                GitHub
-                              </Button>
-                            )}
-                            {member.contact.linkedin && (
+                            {member.github_username && (
                               <Button size="sm" variant="outline" className="text-xs">
                                 <Linkedin className="w-3 h-3 mr-1" />
-                                LinkedIn
+                                {member.github_username}
                               </Button>
                             )}
-                            {member.contact.instagram && (
+                            {member.linkedin_username && (
+                              <Button size="sm" variant="outline" className="text-xs">
+                                <Linkedin className="w-3 h-3 mr-1" />
+                                {member.linkedin_username}
+                              </Button>
+                            )}
+                            {member.instagram_username && (
                               <Button size="sm" variant="outline" className="text-xs">
                                 <Instagram className="w-3 h-3 mr-1" />
-                                Instagram
+                                {member.instagram_username}
                               </Button>
                             )}
                           </div>
