@@ -1,5 +1,6 @@
 // lib/api.js - 데이터 fetch 함수들
 import { supabase } from './supabase'
+import { getTeamMemberAvatarUrl } from './imageHelpers'
 
 // 1. 최근 소식 가져오기
 export async function getLatestNews(limit = 3) {
@@ -113,4 +114,46 @@ export async function submitInquiry(inquiryData) {
     return { success: false, error }
   }
   return { success: true, data }
+}
+
+// 팀원 목록 가져오기 (이미지 URL 포함)
+export async function getTeamMembers() {
+  const { data, error } = await supabase
+    .from('team_members')
+    .select('*')
+    .eq('is_active', true)
+    .order('display_order', { ascending: true })
+
+  if (error) {
+    console.error('Error fetching team members:', error)
+    return []
+  }
+  
+  // 각 팀원의 avatar_path를 실제 URL로 변환
+  const teamMembersWithAvatars = data.map(member => ({
+    ...member,
+    avatar_url: getTeamMemberAvatarUrl(member.avatar_path)
+  }))
+  
+  return teamMembersWithAvatars
+}
+
+// 특정 팀원 정보 가져오기 (이미지 URL 포함)
+export async function getTeamMember(id) {
+  const { data, error } = await supabase
+    .from('team_members')
+    .select('*')
+    .eq('id', id)
+    .eq('is_active', true)
+    .single()
+
+  if (error) {
+    console.error('Error fetching team member:', error)
+    return null
+  }
+  
+  return {
+    ...data,
+    avatar_url: getTeamMemberAvatarUrl(data.avatar_path)
+  }
 }

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
@@ -11,155 +11,70 @@ import {
   Palette, 
   BarChart3, 
   Briefcase,
+  Book,
   Heart,
   Coffee,
   Music,
   Gamepad2,
-  Book,
+  BookOpen,
   Camera,
   Mail,
   Github,
   Linkedin,
   Instagram,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  Loader2
 } from "lucide-react"
+import { getTeamMembers } from "@/app/api"
 
 export default function TeamMembersSection() {
+  const [teamMembers, setTeamMembers] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
   const [expandedMember, setExpandedMember] = useState(null)
 
-  const teamMembers = [
-    {
-      id: 1,
-      name: "전민경",
-      role: "CEO 및 기획",
-      major: "",
-      university: "연세대학교 교육대학원",
-      mbti: "OOOO",
-      avatar: null, // 실제 사진 URL로 교체
-      mainColor: "from-blue-400 to-blue-500",
-      icon: Briefcase,
-      oneLinear: "누구나 쉽게 쓸 수 있는 서비스를 만들고 싶어서",
-      personality: ["열정적", "아이디어 뱅크", "사용자 중심"],
-      hobbies: ["카페 탐방", "넷플릭스", "산책"],
-      favFood: "마라탕 🌶️",
-      favMovie: "인터스텔라",
-      quote: "완벽하지 않아도 시작하면 길이 보여요!",
-      tmi: "아이디어가 떠오르면 새벽 3시에도 메시지를 보내는 타입이에요 😅",
-      skills: ["사용자 리서치", "비즈니스 기획", "프레젠테이션"],
-      contact: {
-        email: "doyeon@shellby.co.kr",
-        github: null,
-        linkedin: "kim-doyeon",
-        instagram: "@doyeon_ideas"
-      }
-    },
-    {
-      id: 2,
-      name: "이아영",
-      role: "마케팅",
-      major: "",
-      university: "이화여자대학교 특수교육과",
-      mbti: "OOOO",
-      avatar: null,
-      mainColor: "from-green-400 to-green-500",
-      icon: Code,
-      oneLinear: "코드로 사람들의 삶을 더 편하게 만들고 싶어서",
-      personality: ["논리적", "완벽주의", "문제 해결사"],
-      hobbies: ["코딩", "게임", "유튜브"],
-      favFood: "치킨 🍗",
-      favMovie: "매트릭스",
-      quote: "버그는 항상 예상치 못한 곳에서 나타나죠",
-      tmi: "커밋 메시지를 쓸 때 가장 오래 고민해요 🤔",
-      skills: ["React/Next.js", "Node.js", "데이터베이스 설계"],
-      contact: {
-        email: "junho@shellby.co.kr",
-        github: "junho-dev",
-        linkedin: "lee-junho-dev",
-        instagram: null
-      }
-    },
-    {
-      id: 3,
-      name: "정현주",
-      role: "CTO 및 PM",
-      major: "",
-      university: "국민대학교 소프트웨어학부",
-      mbti: "OOOO",
-      avatar: null,
-      mainColor: "from-pink-400 to-pink-500",
-      icon: Palette,
-      oneLinear: "예쁜 디자인으로 사용자들을 행복하게 만들고 싶어서",
-      personality: ["감성적", "디테일 지향", "사용자 공감"],
-      hobbies: ["드로잉", "전시 관람", "인스타그램"],
-      favFood: "딸기케이크 🍰",
-      favMovie: "토이 스토리",
-      quote: "좋은 디자인은 보이지 않는 곳에서 완성돼요",
-      tmi: "픽셀 1px 차이도 신경 쓰는 완벽주의자예요 ✨",
-      skills: ["UI/UX 디자인", "Figma", "일러스트레이션"],
-      contact: {
-        email: "seohyun@shellby.co.kr",
-        github: null,
-        linkedin: null,
-        instagram: "@seohyun_design"
-      }
-    },
-    {
-      id: 4,
-      name: "조원재",
-      role: "백엔드 및 서버 개발",
-      major: "",
-      university: "국민대학교 소프트웨어학부",
-      mbti: "OOOO",
-      avatar: null,
-      mainColor: "from-purple-400 to-purple-500",
-      icon: BarChart3,
-      oneLinear: "더 많은 분들께 셸비를 알리고 싶어서",
-      personality: ["소통형", "트렌드 센스", "분석적"],
-      hobbies: ["SNS", "카페", "영화"],
-      favFood: "파스타 🍝",
-      favMovie: "어벤져스",
-      quote: "데이터는 거짓말하지 않아요!",
-      tmi: "하루에 인스타 스토리를 10개는 올리는 것 같아요 📸",
-      skills: ["소셜미디어 마케팅", "콘텐츠 기획", "데이터 분석"],
-      contact: {
-        email: "minsu@shellby.co.kr",
-        github: null,
-        linkedin: "choi-minsu-marketing",
-        instagram: "@minsu_marketing"
-      }
-    },
-    {
-      id: 5,
-      name: "전성호",
-      role: "프론트엔드 개발",
-      major: "",
-      university: "한국뉴욕주립대학교 컴퓨터과학과",
-      mbti: "OOOO",
-      avatar: null,
-      mainColor: "from-orange-400 to-orange-500",
-      icon: Book,
-      oneLinear: "따뜻한 콘텐츠로 마음을 전하고 싶어서",
-      personality: ["공감 능력", "글쓰기 좋아함", "세심함"],
-      hobbies: ["독서", "글쓰기", "음악 감상"],
-      favFood: "떡볶이 🍢",
-      favMovie: "라라랜드",
-      quote: "좋은 글은 마음을 움직이는 힘이 있어요",
-      tmi: "밤에 감성에 젖어서 시를 쓸 때가 있어요 🌙",
-      skills: ["콘텐츠 라이팅", "사용자 인터뷰", "심리 상담"],
-      contact: {
-        email: "hayoung@shellby.co.kr",
-        github: null,
-        linkedin: null,
-        instagram: "@hayoung_writes"
+  useEffect(() => {
+    async function fetchTeamMembers() {
+      try {
+        const data = await getTeamMembers()
+        setTeamMembers(data)
+      } catch (error) {
+        console.error('Failed to fetch team members:', error)
+      } finally {
+        setIsLoading(false)
       }
     }
-  ]
+    fetchTeamMembers()
+  }, [])
+
+  const iconMap = {
+    Briefcase,
+    Code,
+    Palette,
+    BarChart3,
+    Book,
+    BookOpen,
+    Users,
+    Camera
+  }
+
 
   const handleMemberExpand = (memberId) => {
     setExpandedMember(expandedMember === memberId ? null : memberId)
   }
 
+  if (isLoading) {
+    return (
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <Loader2 className="w-8 h-8 animate-spin mx-auto text-orange-500" />
+            <p className="mt-4 text-gray-600">팀원 정보를 불러오는 중...</p>
+          </div>
+        </div>
+      </section>
+    )
+  }
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -182,27 +97,33 @@ export default function TeamMembersSection() {
         {/* 팀원 카드들 */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {teamMembers.map((member) => {
-            const IconComponent = member.icon
+            const IconComponent = iconMap[member.icon_name] || Briefcase
             const isExpanded = expandedMember === member.id
             
             return (
               <Card key={member.id} className="bg-white border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden">
                 <CardContent className="p-0">
                   {/* 프로필 헤더 */}
-                  <div className={`relative h-32 bg-gradient-to-r ${member.mainColor} flex items-end justify-center pb-4`}>
+                  <div className={`relative h-48 bg-gradient-to-r ${member.main_color} flex items-center justify-center overflow-hidden`}>
                     {/* 프로필 사진 */}
-                    <div className="absolute -bottom-8 w-16 h-16 bg-white rounded-full border-4 border-white shadow-lg flex items-center justify-center">
-                      {member.avatar ? (
-                        <Image
-                          src={member.avatar}
+                    <div className="relative w-24 h-24 rounded-full border-4 border-white shadow-lg overflow-hidden bg-white">
+                      {member.avatar_url ? (
+                        <Image 
+                          src={member.avatar_url} 
                           alt={`${member.name} 프로필`}
-                          width={60}
-                          height={60}
-                          className="rounded-full object-cover"
+                          width={96}
+                          height={96}
+                          className="object-cover"
+                          onError={(e) => {
+                            // 이미지 로드 실패 시 이미지 숨기고 아이콘 표시
+                            e.target.style.display = 'none'
+                            e.target.nextSibling.style.display = 'flex'
+                          }}
                         />
-                      ) : (
-                        <IconComponent className="w-8 h-8 text-gray-600" />
-                      )}
+                      ) : null}
+                      <div style={{ display: member.avatar_url ? 'none' : 'flex' }}>
+                        <IconComponent />
+                      </div>
                     </div>
                     
                     {/* MBTI 배지 */}
@@ -214,10 +135,11 @@ export default function TeamMembersSection() {
                   </div>
 
                   {/* 기본 정보 */}
-                  <div className="pt-12 pb-6 px-6 space-y-4">
+                  <div className="pt-6 pb-6 px-6 space-y-4">
                     <div className="text-center space-y-2">
                       <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
                       <p className="text-sm font-medium text-gray-600">{member.role}</p>
+                      <p className="text-xs text-gray-500">{member.major}</p>
                       <p className="text-xs text-gray-500">{member.university}</p>
                     </div>
 
@@ -227,7 +149,7 @@ export default function TeamMembersSection() {
                         "셸비에 참여한 이유"
                       </p>
                       <p className="text-sm text-gray-600 mt-1">
-                        {member.oneLinear}
+                        {member.one_linear}
                       </p>
                     </div>
 
@@ -279,10 +201,10 @@ export default function TeamMembersSection() {
                         {/* TMI */}
                         <div className="space-y-2">
                           <div className="flex items-center justify-between text-xs text-gray-600">
-                            <span>💛 좋아하는 음식: {member.favFood}</span>
+                            <span>💛 좋아하는 음식: {member.fav_food}</span>
                           </div>
                           <div className="flex items-center justify-between text-xs text-gray-600">
-                            <span>🎬 좋아하는 영화: {member.favMovie}</span>
+                            <span>🎬 좋아하는 영화: {member.fav_movie}</span>
                           </div>
                         </div>
 
@@ -305,7 +227,7 @@ export default function TeamMembersSection() {
                           <h4 className="text-sm font-semibold text-gray-800 mb-2">전문 분야</h4>
                           <div className="flex flex-wrap gap-1">
                             {member.skills.map((skill, index) => (
-                              <Badge key={index} variant="outline" className={`text-xs bg-gradient-to-r ${member.mainColor} text-white border-0`}>
+                              <Badge key={index} variant="outline" className={`text-xs bg-gradient-to-r ${member.main_color} text-white border-0`}>
                                 {skill}
                               </Badge>
                             ))}
@@ -320,7 +242,7 @@ export default function TeamMembersSection() {
                               <Mail className="w-3 h-3 mr-1" />
                               이메일
                             </Button>
-                            {member.contact.github && (
+                            {member.contact.github_username && (
                               <Button size="sm" variant="outline" className="text-xs">
                                 <Github className="w-3 h-3 mr-1" />
                                 GitHub
