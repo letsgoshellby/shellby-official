@@ -1,0 +1,112 @@
+.container {
+  min-height: 100vh;
+  padding: 80px 20px 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #667eea;
+}
+
+.wrapper h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #444;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.wrapper h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.wrapper p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.wrapper p.indent1 {
+  padding-left: 20px;
+}
+
+.wrapper strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.wrapper li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.wrapper table th,
+.wrapper table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.wrapper table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+}
+
+.wrapper table td {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 15px 30px;
+  }
+
+  .wrapper {
+    padding: 30px 20px;
+  }
+
+  .wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .wrapper h3 {
+    font-size: 1.2rem;
+  }
+
+  .wrapper table {
+    font-size: 0.9rem;
+  }
+}
