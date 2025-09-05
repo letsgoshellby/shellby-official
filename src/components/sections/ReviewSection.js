@@ -68,7 +68,7 @@ export default function ReviewsSection() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <Loader2 className="w-8 h-8 animate-spin mx-auto text-orange-500" />
+            <Loader2 className="w-8 h-8 animate-spin mx-auto text-teal-500" />
             <p className="mt-4 text-gray-600">후기를 불러오는 중...</p>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function ReviewsSection() {
       <div className="container mx-auto px-4">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-orange-200 text-orange-700">
+          <Badge variant="outline" className="mb-4 border-teal-200 text-teal-700">
             <Heart className="w-3 h-3 mr-1 fill-current" />
             진짜 후기
           </Badge>
@@ -100,23 +100,23 @@ export default function ReviewsSection() {
             {/* 통계 정보 */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               <div className="text-center space-y-2">
-                <div className="text-3xl lg:text-4xl font-bold text-orange-500">5.0</div>
+                <div className="text-3xl lg:text-4xl font-bold text-teal-500">5.0</div>
                 <div className="flex justify-center space-x-1 mb-2">
                   {renderStars(5)}
                 </div>
                 <p className="text-gray-600 text-sm">평균 만족도</p>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-3xl lg:text-4xl font-bold text-pink-500">0+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-emerald-500">0+</div>
                 <div className="flex justify-center">
-                  <Users className="w-5 h-5 text-pink-500" />
+                  <Users className="w-5 h-5 text-emerald-500" />
                 </div>
                 <p className="text-gray-600 text-sm">이용 가족 수</p>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-3xl lg:text-4xl font-bold text-orange-500">100%</div>
+                <div className="text-3xl lg:text-4xl font-bold text-teal-500">100%</div>
                 <div className="flex justify-center">
-                  <Heart className="w-5 h-5 text-orange-500 fill-current" />
+                  <Heart className="w-5 h-5 text-teal-500 fill-current" />
                 </div>
                 <p className="text-gray-600 text-sm">재이용률</p>
               </div>
@@ -130,7 +130,7 @@ export default function ReviewsSection() {
                   <Button
                     variant="outline"
                     size="icon"
-                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg border-gray-200 hover:bg-orange-50 hover:border-orange-200 -ml-6 hidden lg:flex"
+                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg border-gray-200 hover:bg-teal-50 hover:border-teal-200 -ml-6 hidden lg:flex"
                     onClick={prevReview}
                   >
                     <ChevronLeft className="w-4 h-4" />
@@ -138,7 +138,7 @@ export default function ReviewsSection() {
                   <Button
                     variant="outline"
                     size="icon"
-                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg border-gray-200 hover:bg-orange-50 hover:border-orange-200 -mr-6 hidden lg:flex"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg border-gray-200 hover:bg-teal-50 hover:border-teal-200 -mr-6 hidden lg:flex"
                     onClick={nextReview}
                   >
                     <ChevronRight className="w-4 h-4" />
@@ -155,14 +155,14 @@ export default function ReviewsSection() {
                 {reviews.map((review, index) => (
                   <Card 
                     key={review.id} 
-                    className="flex-shrink-0 w-full md:w-96 bg-gradient-to-br from-orange-50 to-pink-50 border-orange-100 shadow-lg"
+                    className="flex-shrink-0 w-full md:w-96 bg-gradient-to-br from-teal-50 to-emerald-50 border-teal-100 shadow-lg"
                     style={{ scrollSnapAlign: 'start' }}
                   >
                     <CardContent className="p-8">
                       <div className="space-y-6">
                         {/* 인용 아이콘 */}
                         <div className="flex justify-between items-start">
-                          <Quote className="w-8 h-8 text-orange-300" />
+                          <Quote className="w-8 h-8 text-teal-300" />
                           <div className="flex space-x-1">
                             {renderStars(review.rating)}
                           </div>
@@ -174,8 +174,8 @@ export default function ReviewsSection() {
                         </blockquote>
 
                         {/* 작성자 정보 */}
-                        <div className="flex items-center space-x-4 pt-4 border-t border-orange-200">
-                          <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-400 rounded-full flex items-center justify-center">
+                        <div className="flex items-center space-x-4 pt-4 border-t border-teal-200">
+                          <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-emerald-400 rounded-full flex items-center justify-center">
                             <span className="text-white font-semibold text-lg">
                               {review.customer_name?.charAt(0) || '😊'}
                             </span>
@@ -201,7 +201,7 @@ export default function ReviewsSection() {
                       key={index}
                       className={`w-3 h-3 rounded-full transition-all duration-200 ${
                         index === currentIndex 
-                          ? 'bg-orange-500 scale-110' 
+                          ? 'bg-teal-500 scale-110' 
                           : 'bg-gray-300 hover:bg-gray-400'
                       }`}
                       onClick={() => scrollToReview(index)}
@@ -212,7 +212,7 @@ export default function ReviewsSection() {
             </div>
 
             {/* 후기 작성 유도 */}
-            <div className="mt-20 bg-gradient-to-r from-orange-500 to-pink-500 rounded-3xl p-8 lg:p-12 text-white text-center">
+            <div className="mt-20 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-3xl p-8 lg:p-12 text-white text-center">
               <div className="max-w-2xl mx-auto space-y-6">
                 <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto">
                   <Heart className="w-8 h-8 fill-current" />
@@ -231,14 +231,14 @@ export default function ReviewsSection() {
         ) : (
           /* 후기가 없을 때 */
           <div className="text-center py-16">
-            <div className="w-24 h-24 bg-gradient-to-br from-orange-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Heart className="w-12 h-12 text-orange-400 fill-current" />
+            <div className="w-24 h-24 bg-gradient-to-br from-teal-100 to-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Heart className="w-12 h-12 text-teal-400 fill-current" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">첫 번째 후기의 주인공이 되어주세요!</h3>
             <p className="text-gray-600 mb-8">
               셸비와 함께하는 여러분의 특별한 이야기를 기다리고 있어요.
             </p>
-            <Button variant="outline" className="border-orange-200 text-orange-700 hover:bg-orange-50">
+            <Button variant="outline" className="border-teal-200 text-teal-700 hover:bg-teal-50">
               상담 시작하기
             </Button>
           </div>

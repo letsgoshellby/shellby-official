@@ -281,7 +281,7 @@ export default function SolutionHeroSection() {
                 <CheckCircle className="w-8 h-8 text-white" />
               </div>
               
-              <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-xl flex items-center justify-center shadow-lg">
+              <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-yellow-400 to-teal-400 rounded-xl flex items-center justify-center shadow-lg">
                 <Star className="w-6 h-6 text-white fill-current" />
               </div>
 

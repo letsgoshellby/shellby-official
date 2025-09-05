@@ -75,7 +75,7 @@ export default function Header() {
             {navigationItems.map((item) => (
               <NavigationMenuItem key={item.href}>
                 <NavigationMenuLink asChild>
-                  <Link href={item.href} className={`${navigationMenuTriggerStyle()} text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-colors`}>
+                  <Link href={item.href} className={`${navigationMenuTriggerStyle()} text-gray-700 hover:text-teal-600 hover:bg-teal-50 transition-colors`}>
                     {item.title}
                   </Link>
                 </NavigationMenuLink>
@@ -120,13 +120,13 @@ export default function Header() {
                   <Link 
                     key={item.href}
                     href={item.href} 
-                    className="flex flex-col space-y-1 p-3 rounded-lg hover:bg-orange-50 transition-colors group"
+                    className="flex flex-col space-y-1 p-3 rounded-lg hover:bg-teal-50 transition-colors group"
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="font-medium text-gray-800 group-hover:text-orange-600">
+                    <span className="font-medium text-gray-800 group-hover:text-teal-600">
                       {item.title}
                     </span>
-                    <span className="text-sm text-gray-500 group-hover:text-orange-500">
+                    <span className="text-sm text-gray-500 group-hover:text-teal-500">
                       {item.description}
                     </span>
                   </Link>

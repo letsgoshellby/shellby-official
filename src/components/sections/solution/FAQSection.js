@@ -55,8 +55,8 @@ export default function FAQSection() {
     { id: "app", label: "앱 사용법", icon: Smartphone, color: "text-blue-600" },
     { id: "cost", label: "요금/결제", icon: CreditCard, color: "text-green-600" },
     { id: "privacy", label: "개인정보", icon: Shield, color: "text-purple-600" },
-    { id: "expert", label: "전문가", icon: Users, color: "text-orange-600" },
-    { id: "consultation", label: "상담 진행", icon: MessageCircle, color: "text-pink-600" },
+    { id: "expert", label: "전문가", icon: Users, color: "text-teal-600" },
+    { id: "consultation", label: "상담 진행", icon: MessageCircle, color: "text-emerald-600" },
     { id: "general", label: "기타", icon: Clock, color: "text-gray-600" }
   ]
 
@@ -97,7 +97,7 @@ export default function FAQSection() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <Loader2 className="w-8 h-8 animate-spin mx-auto text-orange-500" />
+            <Loader2 className="w-8 h-8 animate-spin mx-auto text-teal-500" />
             <p className="mt-4 text-gray-600">자주 묻는 질문을 불러오는 중...</p>
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function FAQSection() {
       <div className="container mx-auto px-4">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-orange-200 text-orange-700">
+          <Badge variant="outline" className="mb-4 border-teal-200 text-teal-700">
             <HelpCircle className="w-3 h-3 mr-1" />
             궁금한 점들
           </Badge>
@@ -137,10 +137,10 @@ export default function FAQSection() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {popularFAQs.map((faq, index) => (
-              <Card key={index} className="bg-gradient-to-br from-orange-50 to-pink-50 border-orange-200 hover:shadow-lg transition-all duration-300">
+              <Card key={index} className="bg-gradient-to-br from-teal-50 to-emerald-50 border-teal-200 hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-6 space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-gradient-to-r from-orange-400 to-pink-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-lg flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-sm">{index + 1}</span>
                     </div>
                     <div className="space-y-2">
@@ -167,7 +167,7 @@ export default function FAQSection() {
               placeholder="궁금한 것을 검색해보세요..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+              className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
             />
           </div>
         </div>
@@ -211,7 +211,7 @@ export default function FAQSection() {
                       >
                         <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 text-left font-medium text-gray-900 hover:no-underline">
                           <div className="flex items-center space-x-3">
-                            <div className="w-6 h-6 bg-gradient-to-r from-orange-400 to-pink-400 rounded-full flex items-center justify-center flex-shrink-0">
+                            <div className="w-6 h-6 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full flex items-center justify-center flex-shrink-0">
                               <span className="text-white text-xs font-bold">Q</span>
                             </div>
                             <span>{faq.question}</span>
@@ -255,7 +255,7 @@ export default function FAQSection() {
 
         {/* 추가 문의 섹션 */}
         <div className="mt-20">
-          <Card className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 border-0 shadow-2xl">
+          <Card className="bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 border-0 shadow-2xl">
             <CardContent className="p-8 lg:p-12 text-white text-center">
               <div className="max-w-3xl mx-auto space-y-6">
                 <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto">

@@ -35,35 +35,24 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-pink-50 to-orange-100 py-20 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-emerald-50 to-teal-100 py-20 lg:py-32">
       {/* 배경 장식 요소들 */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-orange-200/30 to-pink-200/30 blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-orange-200/20 to-pink-200/20 blur-3xl"></div>
+        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-teal-200/30 to-emerald-200/30 blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-teal-200/20 to-emerald-200/20 blur-3xl"></div>
       </div>
 
       <div className="container relative mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* 텍스트 콘텐츠 */}
           <div className="space-y-8">
-            {/* 배지 */}
-            <div className="flex items-center space-x-2">
-              <Badge variant="secondary" className="bg-orange-100 text-orange-800 border-orange-200">
-                <Heart className="w-3 h-3 mr-1 fill-current" />
-                새로운 상담 서비스
-              </Badge>
-              <Badge variant="outline" className="border-pink-200 text-pink-700">
-                <Star className="w-3 h-3 mr-1 fill-current" />
-                2025 런칭
-              </Badge>
-            </div>
 
             {/* 메인 헤드라인 */}
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 느린학습자와 가족을 위한{" "}
                 <br className=" block" />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">
                   전문 상담
                 </span>이{" "}
                 <br className=" block" />
@@ -79,20 +68,20 @@ export default function HeroSection() {
             {/* 주요 특징 */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="flex items-center space-x-2 text-gray-700">
-                <div className="flex items-center justify-center w-8 h-8 bg-orange-100 rounded-lg">
-                  <Users className="w-4 h-4 text-orange-600" />
+                <div className="flex items-center justify-center w-8 h-8 bg-teal-100 rounded-lg">
+                  <Users className="w-4 h-4 text-teal-600" />
                 </div>
                 <span className="text-sm font-medium">검증된 전문가</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
-                <div className="flex items-center justify-center w-8 h-8 bg-pink-100 rounded-lg">
-                  <Shield className="w-4 h-4 text-pink-600" />
+                <div className="flex items-center justify-center w-8 h-8 bg-emerald-100 rounded-lg">
+                  <Shield className="w-4 h-4 text-emerald-600" />
                 </div>
                 <span className="text-sm font-medium">안전한 상담</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
-                <div className="flex items-center justify-center w-8 h-8 bg-orange-100 rounded-lg">
-                  <Heart className="w-4 h-4 text-orange-600 fill-current" />
+                <div className="flex items-center justify-center w-8 h-8 bg-teal-100 rounded-lg">
+                  <Heart className="w-4 h-4 text-teal-600 fill-current" />
                 </div>
                 <span className="text-sm font-medium">따뜻한 케어</span>
               </div>
@@ -149,7 +138,7 @@ export default function HeroSection() {
             <div className="relative mx-auto max-w-md lg:max-w-lg">
               {/* 메인 스마트폰 모형 */}
               <div className="relative z-10 bg-white rounded-3xl shadow-2xl p-4">
-                <div className="bg-gradient-to-br from-orange-400 to-pink-400 rounded-2xl h-96 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-teal-500 to-emerald-500 rounded-2xl h-96 flex items-center justify-center">
                   <div className="text-center text-white space-y-4">
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto">
                       <Heart className="w-8 h-8 fill-current" />
@@ -168,16 +157,16 @@ export default function HeroSection() {
               </div>
 
               {/* 플로팅 요소들 */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-orange-200 to-pink-200 rounded-2xl flex items-center justify-center shadow-lg">
-                <Download className="w-8 h-8 text-orange-600" />
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-teal-200 to-emerald-200 rounded-2xl flex items-center justify-center shadow-lg">
+                <Download className="w-8 h-8 text-teal-600" />
               </div>
               
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-pink-200 to-orange-200 rounded-xl flex items-center justify-center shadow-lg">
-                <Star className="w-6 h-6 text-pink-600 fill-current" />
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-emerald-200 to-teal-200 rounded-xl flex items-center justify-center shadow-lg">
+                <Star className="w-6 h-6 text-emerald-600 fill-current" />
               </div>
 
               <div className="absolute top-1/2 -left-8 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
-                <Heart className="w-6 h-6 text-red-500 fill-current animate-pulse" />
+                <Heart className="w-6 h-6 text-teal-500 fill-current animate-pulse" />
               </div>
             </div>
           </div>

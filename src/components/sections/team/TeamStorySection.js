@@ -42,7 +42,7 @@ export default function TeamStorySection() {
       description: "정말 이걸 만들어야겠다고 결심하고, 본격적으로 계획을 세우기 시작했어요.",
       details: "편의점 커피만 50잔은 마신 것 같아요... 아이디어 노트만 3권! ☕",
       mood: "🔥",
-      color: "from-orange-400 to-orange-500"
+      color: "from-teal-400 to-teal-500"
     },
     {
       date: "2024년 3-5월",
@@ -51,7 +51,7 @@ export default function TeamStorySection() {
       description: "MVP를 만들어봤는데... 완전 망했어요. 하지만 많은 걸 배웠죠!",
       details: "코딩하다가 울기도 하고, 디자인 때문에 싸우기도 하고... 진짜 힘들었어요 😅",
       mood: "😵‍💫",
-      color: "from-red-400 to-red-500"
+      color: "from-teal-400 to-teal-500"
     },
     {
       date: "2024년 6-8월",
@@ -78,7 +78,7 @@ export default function TeamStorySection() {
       description: "베타 테스터분들이 실제로 써보시고 좋다고 해주셨을 때... 정말 감동이었어요.",
       details: "첫 후기를 받았을 때 팀원들이 다 울었어요 😭 드디어 해냈구나 싶었죠.",
       mood: "🥺",
-      color: "from-pink-400 to-pink-500"
+      color: "from-emerald-400 to-emerald-500"
     },
     {
       date: "2025년 현재",
@@ -140,7 +140,7 @@ export default function TeamStorySection() {
         {/* 타임라인 */}
         <div className="relative max-w-4xl mx-auto mb-20">
           {/* 타임라인 선 */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-200 via-purple-200 to-pink-200"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-200 via-purple-200 to-emerald-200"></div>
           
           <div className="space-y-12">
             {storyTimeline.map((item, index) => {
@@ -212,7 +212,7 @@ export default function TeamStorySection() {
                 <Card key={index} className="bg-white border-gray-200 hover:shadow-lg transition-all duration-300">
                   <CardContent className="p-6 space-y-4">
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-gradient-to-br from-red-400 to-red-500 rounded-lg flex items-center justify-center">
+                      <div className="w-10 h-10 bg-gradient-to-br from-teal-400 to-teal-500 rounded-lg flex items-center justify-center">
                         <IconComponent className="w-5 h-5 text-white" />
                       </div>
                       <h4 className="font-semibold text-gray-900">{challenge.title}</h4>
@@ -235,7 +235,7 @@ export default function TeamStorySection() {
         </div>
 
         {/* 현재와 미래 */}
-        <Card className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 border-0 shadow-2xl">
+        <Card className="bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 border-0 shadow-2xl">
           <CardContent className="p-8 lg:p-12 text-white text-center">
             <div className="max-w-3xl mx-auto space-y-6">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto">

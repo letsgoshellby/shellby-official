@@ -48,7 +48,7 @@ export default function ConsultationProcessSection() {
       ],
       time: "5분 소요",
       color: "from-purple-400 to-purple-500", 
-      bgColor: "from-purple-50 to-pink-50"
+      bgColor: "from-purple-50 to-emerald-50"
     },
     {
       step: "03",
@@ -77,8 +77,8 @@ export default function ConsultationProcessSection() {
         "상담 후 피드백과 다음 계획 수립"
       ],
       time: "50분 상담",
-      color: "from-pink-400 to-pink-500",
-      bgColor: "from-pink-50 to-rose-50"
+      color: "from-emerald-400 to-emerald-500",
+      bgColor: "from-emerald-50 to-teal-50"
     }
   ]
 
@@ -127,7 +127,7 @@ export default function ConsultationProcessSection() {
         {/* 프로세스 단계들 */}
         <div className="relative max-w-6xl mx-auto mb-20">
           {/* 연결선 (데스크톱) */}
-          <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-green-200 to-pink-200"></div>
+          <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-green-200 to-emerald-200"></div>
           
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => {
@@ -220,7 +220,7 @@ export default function ConsultationProcessSection() {
         </div>
 
         {/* 시작하기 CTA */}
-        <Card className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 border-0 shadow-2xl">
+        <Card className="bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 border-0 shadow-2xl">
           <CardContent className="p-8 lg:p-12 text-white text-center">
             <div className="max-w-3xl mx-auto space-y-6">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto">

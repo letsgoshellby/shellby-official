@@ -91,7 +91,7 @@ export default function NewsDetailPage() {
       announcement: { label: '공지사항', color: 'bg-blue-100 text-blue-800' },
       tips: { label: '육아 팁', color: 'bg-green-100 text-green-800' },
       update: { label: '업데이트', color: 'bg-purple-100 text-purple-800' },
-      event: { label: '이벤트', color: 'bg-pink-100 text-pink-800' },
+      event: { label: '이벤트', color: 'bg-emerald-100 text-emerald-800' },
       general: { label: '일반', color: 'bg-gray-100 text-gray-800' }
     }
     return categoryMap[category] || categoryMap.general
@@ -139,7 +139,7 @@ export default function NewsDetailPage() {
       <div className="min-h-screen bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <Loader2 className="w-8 h-8 animate-spin mx-auto text-orange-500" />
+            <Loader2 className="w-8 h-8 animate-spin mx-auto text-teal-500" />
             <p className="mt-4 text-gray-600">기사를 불러오는 중...</p>
           </div>
         </div>
@@ -172,11 +172,11 @@ export default function NewsDetailPage() {
       <div className="border-b border-gray-100 py-4">
         <div className="container mx-auto px-4">
           <nav className="flex items-center space-x-2 text-sm text-gray-500">
-            <Link href="/" className="hover:text-orange-600 transition-colors">
+            <Link href="/" className="hover:text-teal-600 transition-colors">
               홈
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <Link href="/news" className="hover:text-orange-600 transition-colors">
+            <Link href="/news" className="hover:text-teal-600 transition-colors">
               소식
             </Link>
             <ChevronRight className="w-4 h-4" />
@@ -189,7 +189,7 @@ export default function NewsDetailPage() {
 
       {/* 뒤로가기 버튼 */}
       <div className="container mx-auto px-4 py-6">
-        <Button variant="ghost" asChild className="text-gray-600 hover:text-orange-600">
+        <Button variant="ghost" asChild className="text-gray-600 hover:text-teal-600">
           <Link href="/news">
             <ArrowLeft className="w-4 h-4 mr-2" />
             소식 목록으로
@@ -248,7 +248,7 @@ export default function NewsDetailPage() {
                 variant="ghost"
                 size="sm"
                 onClick={handleLike}
-                className={`${isLiked ? 'text-red-500' : 'text-gray-600'} hover:text-red-500`}
+                className={`${isLiked ? 'text-teal-500' : 'text-gray-600'} hover:text-teal-500`}
               >
                 <Heart className={`w-4 h-4 mr-1 ${isLiked ? 'fill-current' : ''}`} />
                 좋아요 {isLiked ? '1' : '0'}
@@ -270,7 +270,7 @@ export default function NewsDetailPage() {
                 variant="ghost"
                 size="sm"
                 onClick={handleShare}
-                className="text-gray-600 hover:text-orange-600"
+                className="text-gray-600 hover:text-teal-600"
               >
                 <Share2 className="w-4 h-4 mr-1" />
                 공유하기
@@ -280,7 +280,7 @@ export default function NewsDetailPage() {
                 variant="ghost"
                 size="sm"
                 onClick={handleCopyLink}
-                className="text-gray-600 hover:text-orange-600"
+                className="text-gray-600 hover:text-teal-600"
               >
                 {isCopied ? (
                   <>
@@ -307,7 +307,7 @@ export default function NewsDetailPage() {
           {/* 작성자 정보 (가상) */}
           <div className="border-t border-gray-200 py-8 mb-12">
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-r from-orange-400 to-pink-400 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full flex items-center justify-center">
                 <User className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -323,7 +323,7 @@ export default function NewsDetailPage() {
           {relatedNews.length > 0 && (
             <div className="border-t border-gray-200 pt-12">
               <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
-                <MessageCircle className="w-6 h-6 mr-2 text-orange-500" />
+                <MessageCircle className="w-6 h-6 mr-2 text-teal-500" />
                 관련 소식
               </h3>
               
@@ -333,7 +333,7 @@ export default function NewsDetailPage() {
                   
                   return (
                     <Card key={news.id} className="group hover:shadow-lg transition-all duration-300 border-gray-200">
-                      <div className="relative h-32 bg-gradient-to-br from-orange-100 to-pink-100 overflow-hidden">
+                      <div className="relative h-32 bg-gradient-to-br from-teal-100 to-emerald-100 overflow-hidden">
                         {news.featured_image ? (
                           <Image
                             src={news.featured_image}
@@ -343,7 +343,7 @@ export default function NewsDetailPage() {
                           />
                         ) : (
                           <div className="flex items-center justify-center h-full">
-                            <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-pink-400 rounded-lg flex items-center justify-center">
+                            <div className="w-8 h-8 bg-gradient-to-br from-teal-400 to-emerald-400 rounded-lg flex items-center justify-center">
                               <MessageCircle className="w-4 h-4 text-white" />
                             </div>
                           </div>
@@ -362,7 +362,7 @@ export default function NewsDetailPage() {
                             {formatDate(news.published_at)}
                           </div>
                           
-                          <h4 className="font-semibold text-gray-900 line-clamp-2 group-hover:text-orange-600 transition-colors">
+                          <h4 className="font-semibold text-gray-900 line-clamp-2 group-hover:text-teal-600 transition-colors">
                             {news.title}
                           </h4>
                           
@@ -372,7 +372,7 @@ export default function NewsDetailPage() {
                           
                           <Link 
                             href={`/news/${news.id}`}
-                            className="inline-flex items-center text-orange-600 hover:text-orange-700 text-sm font-medium transition-colors"
+                            className="inline-flex items-center text-teal-600 hover:text-teal-700 text-sm font-medium transition-colors"
                           >
                             <span>더 보기</span>
                             <ChevronRight className="w-3 h-3 ml-1" />
@@ -388,7 +388,7 @@ export default function NewsDetailPage() {
 
           {/* 더 많은 소식 보기 CTA */}
           <div className="mt-16 text-center">
-            <Card className="bg-gradient-to-r from-orange-500 to-pink-500 border-0 shadow-xl">
+            <Card className="bg-gradient-to-r from-teal-500 to-emerald-500 border-0 shadow-xl">
               <CardContent className="p-8 text-white">
                 <div className="space-y-4">
                   <h4 className="text-xl font-bold">

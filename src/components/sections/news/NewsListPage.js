@@ -62,7 +62,7 @@ export default function NewsListPage() {
     { id: "announcement", label: "공지사항", color: "bg-blue-100 text-blue-800" },
     { id: "tips", label: "육아 팁", color: "bg-green-100 text-green-800" },
     { id: "update", label: "업데이트", color: "bg-purple-100 text-purple-800" },
-    { id: "event", label: "이벤트", color: "bg-pink-100 text-pink-800" },
+    { id: "event", label: "이벤트", color: "bg-emerald-100 text-emerald-800" },
     { id: "general", label: "일반", color: "bg-gray-100 text-gray-800" }
   ]
 
@@ -109,7 +109,7 @@ export default function NewsListPage() {
       <div className="min-h-screen bg-gray-50 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <Loader2 className="w-8 h-8 animate-spin mx-auto text-orange-500" />
+            <Loader2 className="w-8 h-8 animate-spin mx-auto text-teal-500" />
             <p className="mt-4 text-gray-600">소식을 불러오는 중...</p>
           </div>
         </div>
@@ -120,10 +120,10 @@ export default function NewsListPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* 페이지 헤더 */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 to-pink-50">
+      <section className="py-20 bg-gradient-to-br from-teal-50 to-emerald-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4 border-orange-200 text-orange-700">
+            <Badge variant="outline" className="mb-4 border-teal-200 text-teal-700">
               <Newspaper className="w-3 h-3 mr-1" />
               셸비 소식
             </Badge>
@@ -147,7 +147,7 @@ export default function NewsListPage() {
                 placeholder="궁금한 내용을 검색해보세요..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10 pr-4 py-3 rounded-xl border-gray-200 focus:ring-orange-500 focus:border-orange-500"
+                className="pl-10 pr-4 py-3 rounded-xl border-gray-200 focus:ring-teal-500 focus:border-teal-500"
               />
             </div>
 
@@ -160,7 +160,7 @@ export default function NewsListPage() {
                   size="sm"
                   onClick={() => setSelectedCategory(category.id)}
                   className={selectedCategory === category.id 
-                    ? "bg-gradient-to-r from-orange-500 to-pink-500 text-white border-0" 
+                    ? "bg-gradient-to-r from-teal-500 to-emerald-500 text-white border-0" 
                     : "border-gray-200 text-gray-700 hover:bg-gray-50"
                   }
                 >
@@ -182,7 +182,7 @@ export default function NewsListPage() {
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-2xl font-bold text-gray-900 flex items-center">
-                <TrendingUp className="w-6 h-6 mr-2 text-orange-500" />
+                <TrendingUp className="w-6 h-6 mr-2 text-teal-500" />
                 주목할 만한 소식
               </h2>
             </div>
@@ -195,12 +195,12 @@ export default function NewsListPage() {
                 return (
                   <Card 
                     key={article.id} 
-                    className={`group hover:shadow-xl transition-all duration-300 border-gray-200 hover:border-orange-200 overflow-hidden ${
+                    className={`group hover:shadow-xl transition-all duration-300 border-gray-200 hover:border-teal-200 overflow-hidden ${
                       isMainFeature ? 'lg:col-span-2 lg:row-span-1' : ''
                     }`}
                   >
                     {/* 이미지 영역 */}
-                    <div className={`relative ${isMainFeature ? 'h-64' : 'h-48'} bg-gradient-to-br from-orange-100 to-pink-100 overflow-hidden`}>
+                    <div className={`relative ${isMainFeature ? 'h-64' : 'h-48'} bg-gradient-to-br from-teal-100 to-emerald-100 overflow-hidden`}>
                       {article.featured_image ? (
                         <Image
                           src={article.featured_image}
@@ -211,7 +211,7 @@ export default function NewsListPage() {
                       ) : (
                         <div className="flex items-center justify-center h-full">
                           <div className="text-center space-y-2">
-                            <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-pink-400 rounded-2xl flex items-center justify-center mx-auto">
+                            <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-emerald-400 rounded-2xl flex items-center justify-center mx-auto">
                               <Newspaper className="w-8 h-8 text-white" />
                             </div>
                             <p className="text-sm text-gray-600 font-medium">셸비 소식</p>
@@ -229,7 +229,7 @@ export default function NewsListPage() {
                       {/* 피처드 배지 */}
                       {isMainFeature && (
                         <div className="absolute top-4 right-4">
-                          <Badge className="bg-red-500 text-white border-0">
+                          <Badge className="bg-teal-500 text-white border-0">
                             <Star className="w-3 h-3 mr-1 fill-current" />
                             주요 소식
                           </Badge>
@@ -252,7 +252,7 @@ export default function NewsListPage() {
                         </div>
 
                         {/* 제목 */}
-                        <h3 className={`${isMainFeature ? 'text-xl' : 'text-lg'} font-bold text-gray-900 leading-tight group-hover:text-orange-600 transition-colors`}>
+                        <h3 className={`${isMainFeature ? 'text-xl' : 'text-lg'} font-bold text-gray-900 leading-tight group-hover:text-teal-600 transition-colors`}>
                           {article.title}
                         </h3>
 
@@ -265,7 +265,7 @@ export default function NewsListPage() {
                         <div className="pt-2">
                           <Link 
                             href={`/news/${article.id}`}
-                            className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm transition-colors group"
+                            className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors group"
                           >
                             <span>자세히 읽기</span>
                             <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -304,7 +304,7 @@ export default function NewsListPage() {
                     className="group hover:shadow-xl transition-all duration-300 border-gray-200 hover:border-orange-200 overflow-hidden bg-white"
                   >
                     {/* 이미지 영역 */}
-                    <div className="relative h-48 bg-gradient-to-br from-orange-100 to-pink-100 overflow-hidden">
+                    <div className="relative h-48 bg-gradient-to-br from-teal-100 to-emerald-100 overflow-hidden">
                       {article.featured_image ? (
                         <Image
                           src={article.featured_image}
@@ -315,7 +315,7 @@ export default function NewsListPage() {
                       ) : (
                         <div className="flex items-center justify-center h-full">
                           <div className="text-center space-y-2">
-                            <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-400 rounded-xl flex items-center justify-center mx-auto">
+                            <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-emerald-400 rounded-xl flex items-center justify-center mx-auto">
                               <Newspaper className="w-6 h-6 text-white" />
                             </div>
                             <p className="text-xs text-gray-600">셸비 소식</p>
@@ -346,7 +346,7 @@ export default function NewsListPage() {
                         </div>
 
                         {/* 제목 */}
-                        <h3 className="font-semibold text-gray-900 leading-tight group-hover:text-orange-600 transition-colors line-clamp-2">
+                        <h3 className="font-semibold text-gray-900 leading-tight group-hover:text-teal-600 transition-colors line-clamp-2">
                           {article.title}
                         </h3>
 
@@ -359,7 +359,7 @@ export default function NewsListPage() {
                         <div className="pt-2">
                           <Link 
                             href={`/news/${article.id}`}
-                            className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm transition-colors"
+                            className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors"
                           >
                             <span>더 보기</span>
                             <ArrowRight className="w-3 h-3 ml-1" />
@@ -399,7 +399,7 @@ export default function NewsListPage() {
       </section>
 
       {/* 뉴스레터 구독 CTA */}
-      <section className="py-16 bg-gradient-to-r from-orange-500 to-pink-500">
+      <section className="py-16 bg-gradient-to-r from-teal-500 to-emerald-500">
         <div className="container mx-auto px-4">
           <Card className="bg-white/10 backdrop-blur-sm border-white/20">
             <CardContent className="p-8 lg:p-12 text-white text-center">

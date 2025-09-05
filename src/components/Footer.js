@@ -33,12 +33,12 @@ export default function Footer() {
             <h3 className="font-semibold text-gray-800">서비스</h3>
             <ul className="space-y-2">
                 <li>
-                <Link href="/solution" className="text-sm text-gray-600 hover:text-orange-600 transition-colors">
+                <Link href="/solution" className="text-sm text-gray-600 hover:text-teal-600 transition-colors">
                   솔루션
                 </Link>
               </li>
               <li>
-                <Link href="/news" className="text-sm text-gray-600 hover:text-orange-600 transition-colors">
+                <Link href="/news" className="text-sm text-gray-600 hover:text-teal-600 transition-colors">
                   소식
                 </Link>
               </li>
@@ -62,12 +62,12 @@ export default function Footer() {
             <h3 className="font-semibold text-gray-800">회사 정보</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-sm text-gray-600 hover:text-orange-600 transition-colors">
+                <Link href="/about" className="text-sm text-gray-600 hover:text-teal-600 transition-colors">
                   회사 소개
                 </Link>
               </li>
               <li>
-                <Link href="/press" className="text-sm text-gray-600 hover:text-orange-600 transition-colors">
+                <Link href="/press" className="text-sm text-gray-600 hover:text-teal-600 transition-colors">
                   보도자료
                 </Link>
               </li>
@@ -81,19 +81,19 @@ export default function Footer() {
         <div className="space-y-6">
           {/* 이용약관 및 개인정보처리방침 */}
           <div className="flex flex-wrap items-center gap-4 text-sm">
-            <Link href="/terms" className="text-gray-800 hover:text-orange-600 font-medium transition-colors">
+            <Link href="/terms" className="text-gray-800 hover:text-teal-600 font-medium transition-colors">
               이용약관
             </Link>
             <span className="text-gray-300">|</span>
-            <Link href="/privacy" className="text-gray-800 hover:text-orange-600 font-medium transition-colors">
+            <Link href="/privacy" className="text-gray-800 hover:text-teal-600 font-medium transition-colors">
               개인정보처리방침
             </Link>
             {/* <span className="text-gray-300">|</span>
-            <Link href="/youth-protection" className="text-gray-600 hover:text-orange-600 transition-colors">
+            <Link href="/youth-protection" className="text-gray-600 hover:text-teal-600 transition-colors">
               청소년보호정책
             </Link>
             <span className="text-gray-300">|</span>
-            <Link href="/dispute-resolution" className="text-gray-600 hover:text-orange-600 transition-colors">
+            <Link href="/dispute-resolution" className="text-gray-600 hover:text-teal-600 transition-colors">
               분쟁해결기준
             </Link> */}
           </div>
@@ -110,7 +110,7 @@ export default function Footer() {
                   href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1234567890" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-orange-600 transition-colors ml-1"
+                  className="hover:text-teal-600 transition-colors ml-1"
                 >
                   제2024-서울강남-12345호
                 </Link>

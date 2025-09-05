@@ -76,7 +76,7 @@ export default function FinalCTASection() {
   ]
 
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-br from-orange-500 via-pink-500 to-orange-600 relative overflow-hidden">
+    <section className="py-20 lg:py-32 bg-gradient-to-br from-teal-500 via-emerald-500 to-teal-600 relative overflow-hidden">
       {/* 배경 장식 요소들 */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
@@ -204,7 +204,7 @@ export default function FinalCTASection() {
             <div className="relative">
               {/* 메인 스마트폰 */}
               <div className="relative z-10 w-64 h-96 bg-white rounded-[3rem] shadow-2xl p-4">
-                <div className="w-full h-full bg-gradient-to-br from-orange-400 to-pink-400 rounded-[2rem] flex flex-col items-center justify-center space-y-6 text-white relative overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-teal-400 to-emerald-400 rounded-[2rem] flex flex-col items-center justify-center space-y-6 text-white relative overflow-hidden">
                   {/* 앱 아이콘 */}
                   <div className="w-20 h-20 bg-white/20 rounded-3xl flex items-center justify-center">
                     <Heart className="w-10 h-10 fill-current" />
