@@ -35,7 +35,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-emerald-50 to-teal-100 py-20 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-emerald-50 to-teal-100">
       {/* 배경 장식 요소들 */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-teal-200/30 to-emerald-200/30 blur-3xl"></div>
@@ -50,18 +50,20 @@ export default function HeroSection() {
             {/* 메인 헤드라인 */}
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                느린학습자와 가족을 위한{" "}
+                느린학습자 아이의{" "}
+                <br className=" block" />
+                <span className="">
+                  보호자를 위한{" "}
+                </span>
                 <br className=" block" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">
-                  전문 상담
-                </span>이{" "}
-                <br className=" block" />
-                이제 집에서도
+                  1:1 맞춤형 상담
+                </span> 솔루션
               </h1>
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
-                신뢰할 수 있는 전문가와의 1:1 맞춤 상담을{" "}
+                내가 원하는 전문가로부터{" "}
                 <br className=" block" />
-                스마트폰으로 편안하게 받아보세요
+                필요한 솔루션을 온라인으로 받아보세요
               </p>
             </div>
 
@@ -137,36 +139,17 @@ export default function HeroSection() {
           <div className="relative">
             <div className="relative mx-auto max-w-md lg:max-w-lg">
               {/* 메인 스마트폰 모형 */}
-              <div className="relative z-10 bg-white rounded-3xl shadow-2xl p-4">
-                <div className="bg-gradient-to-br from-teal-500 to-emerald-500 rounded-2xl h-96 flex items-center justify-center">
-                  <div className="text-center text-white space-y-4">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto">
-                      <Heart className="w-8 h-8 fill-current" />
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-bold">셸비</h3>
-                      <p className="text-sm opacity-90">따뜻한 상담이 시작됩니다</p>
-                    </div>
-                    <div className="space-y-2">
-                      <div className="h-2 bg-white/30 rounded-full w-3/4 mx-auto"></div>
-                      <div className="h-2 bg-white/30 rounded-full w-1/2 mx-auto"></div>
-                      <div className="h-2 bg-white/30 rounded-full w-2/3 mx-auto"></div>
-                    </div>
-                  </div>
+              <div className="relative z-10">
+                <div className="relative h-[calc(100vh-4rem)] w-full">
+                  <Image 
+                    src={"/shellmate_hand.png"} 
+                    alt="셸메이트" 
+                    fill
+                    style={{ objectFit: "cover", objectPosition: "center" }}
+                    sizes="100vw"
+                    priority
+                  />
                 </div>
-              </div>
-
-              {/* 플로팅 요소들 */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-teal-200 to-emerald-200 rounded-2xl flex items-center justify-center shadow-lg">
-                <Download className="w-8 h-8 text-teal-600" />
-              </div>
-              
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-emerald-200 to-teal-200 rounded-xl flex items-center justify-center shadow-lg">
-                <Star className="w-6 h-6 text-emerald-600 fill-current" />
-              </div>
-
-              <div className="absolute top-1/2 -left-8 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
-                <Heart className="w-6 h-6 text-teal-500 fill-current animate-pulse" />
               </div>
             </div>
           </div>
