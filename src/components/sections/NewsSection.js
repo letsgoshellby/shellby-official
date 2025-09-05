@@ -32,7 +32,7 @@ export default function NewsSection() {
       announcement: { label: '공지사항', color: 'bg-blue-100 text-blue-800 border-blue-200' },
       tips: { label: '육아 팁', color: 'bg-green-100 text-green-800 border-green-200' },
       update: { label: '업데이트', color: 'bg-purple-100 text-purple-800 border-purple-200' },
-      event: { label: '이벤트', color: 'bg-pink-100 text-pink-800 border-pink-200' },
+      event: { label: '이벤트', color: 'bg-emerald-100 text-emerald-800 border-emerald-200' },
       general: { label: '일반', color: 'bg-gray-100 text-gray-800 border-gray-200' }
     }
     return categoryMap[category] || categoryMap.general
@@ -65,7 +65,7 @@ export default function NewsSection() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <Loader2 className="w-8 h-8 animate-spin mx-auto text-orange-500" />
+            <Loader2 className="w-8 h-8 animate-spin mx-auto text-teal-500" />
             <p className="mt-4 text-gray-600">최신 소식을 불러오는 중...</p>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function NewsSection() {
       <div className="container mx-auto px-4">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-orange-200 text-orange-700">
+          <Badge variant="outline" className="mb-4 border-teal-200 text-teal-700">
             <Newspaper className="w-3 h-3 mr-1" />
             따끈따끈한 소식
           </Badge>
@@ -103,12 +103,12 @@ export default function NewsSection() {
                 return (
                   <Card 
                     key={article.id} 
-                    className={`group hover:shadow-xl transition-all duration-300 border-gray-200 hover:border-orange-200 overflow-hidden ${
+                    className={`group hover:shadow-xl transition-all duration-300 border-gray-200 hover:border-teal-200 overflow-hidden ${
                       isFeature ? 'md:col-span-2 lg:col-span-1' : ''
                     }`}
                   >
                     {/* 이미지 영역 */}
-                    <div className="relative h-48 bg-gradient-to-br from-orange-100 to-pink-100 overflow-hidden">
+                    <div className="relative h-48 bg-gradient-to-br from-teal-100 to-emerald-100 overflow-hidden">
                       {article.featured_image ? (
                         <Image
                           src={article.featured_image}
@@ -119,7 +119,7 @@ export default function NewsSection() {
                       ) : (
                         <div className="flex items-center justify-center h-full">
                           <div className="text-center space-y-2">
-                            <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-pink-400 rounded-2xl flex items-center justify-center mx-auto">
+                            <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-emerald-400 rounded-2xl flex items-center justify-center mx-auto">
                               <Newspaper className="w-8 h-8 text-white" />
                             </div>
                             <p className="text-sm text-gray-600 font-medium">셸비 소식</p>
@@ -150,7 +150,7 @@ export default function NewsSection() {
                         </div>
 
                         {/* 제목 */}
-                        <h3 className="text-lg font-semibold text-gray-900 leading-tight group-hover:text-orange-600 transition-colors">
+                        <h3 className="text-lg font-semibold text-gray-900 leading-tight group-hover:text-teal-600 transition-colors">
                           {article.title}
                         </h3>
 
@@ -163,7 +163,7 @@ export default function NewsSection() {
                         <div className="pt-2">
                           <Link 
                             href={`/news/${article.id}`}
-                            className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium text-sm transition-colors group"
+                            className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors group"
                           >
                             <span>자세히 보기</span>
                             <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -178,7 +178,7 @@ export default function NewsSection() {
 
             {/* 더 많은 소식 보기 버튼 */}
             <div className="text-center">
-              <Button asChild size="lg" variant="outline" className="border-orange-200 text-orange-700 hover:bg-orange-50">
+              <Button asChild size="lg" variant="outline" className="border-teal-200 text-teal-700 hover:bg-teal-50">
                 <Link href="/news" className="inline-flex items-center space-x-2">
                   <MessageCircle className="w-4 h-4" />
                   <span>모든 소식 보기</span>
@@ -190,14 +190,14 @@ export default function NewsSection() {
         ) : (
           /* 소식이 없을 때 */
           <div className="text-center py-16">
-            <div className="w-24 h-24 bg-gradient-to-br from-orange-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Newspaper className="w-12 h-12 text-orange-400" />
+            <div className="w-24 h-24 bg-gradient-to-br from-teal-100 to-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Newspaper className="w-12 h-12 text-teal-400" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">곧 새로운 소식을 전해드릴게요!</h3>
             <p className="text-gray-600 mb-8">
               셸비의 다양한 소식과 유용한 정보들이 준비되고 있습니다.
             </p>
-            <Button asChild variant="outline" className="border-orange-200 text-orange-700 hover:bg-orange-50">
+            <Button asChild variant="outline" className="border-teal-200 text-teal-700 hover:bg-teal-50">
               <Link href="/news">
                 소식 페이지 방문하기
               </Link>
@@ -206,7 +206,7 @@ export default function NewsSection() {
         )}
 
         {/* 뉴스레터 구독 안내 */}
-        <div className="mt-20 bg-gradient-to-r from-orange-500 to-pink-500 rounded-3xl p-8 lg:p-12 text-white text-center">
+        <div className="mt-20 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-3xl p-8 lg:p-12 text-white text-center">
           <div className="max-w-2xl mx-auto space-y-6">
             <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto">
               <MessageCircle className="w-8 h-8" />

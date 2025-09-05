@@ -68,7 +68,7 @@ export default function TeamMembersSection() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <Loader2 className="w-8 h-8 animate-spin mx-auto text-orange-500" />
+            <Loader2 className="w-8 h-8 animate-spin mx-auto text-teal-500" />
             <p className="mt-4 text-gray-600">팀원 정보를 불러오는 중...</p>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function TeamMembersSection() {
       <div className="container mx-auto px-4">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-orange-200 text-orange-700">
+          <Badge variant="outline" className="mb-4 border-teal-200 text-teal-700">
             <Users className="w-3 h-3 mr-1" />
             우리 팀원들
           </Badge>
@@ -143,7 +143,7 @@ export default function TeamMembersSection() {
                     </div>
 
                     {/* 한 줄 소개 */}
-                    <div className="bg-gray-50 rounded-lg p-3 border-l-4 border-orange-200">
+                    <div className="bg-gray-50 rounded-lg p-3 border-l-4 border-teal-200">
                       <p className="text-sm text-gray-700 italic">
                         "셸비에 참여한 이유"
                       </p>
@@ -166,7 +166,7 @@ export default function TeamMembersSection() {
                       variant="ghost"
                       size="sm"
                       onClick={() => handleMemberExpand(member.id)}
-                      className="w-full text-gray-600 hover:text-orange-600"
+                      className="w-full text-gray-600 hover:text-teal-600"
                     >
                       {isExpanded ? (
                         <>
@@ -184,7 +184,7 @@ export default function TeamMembersSection() {
                       <div className="space-y-4 pt-4 border-t border-gray-100 animate-in slide-in-from-top-2">
 
                         {/* 명언 */}
-                        <div className="bg-gradient-to-r from-orange-50 to-pink-50 rounded-lg p-3">
+                        <div className="bg-gradient-to-r from-teal-50 to-emerald-50 rounded-lg p-3">
                           <p className="text-xs text-gray-700 italic">
                             💭 "{member.quote}"
                           </p>
@@ -274,9 +274,9 @@ export default function TeamMembersSection() {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-pink-50 to-orange-50 border-pink-200">
+          <Card className="bg-gradient-to-br from-emerald-50 to-teal-50 border-emerald-200">
             <CardContent className="p-6 text-center space-y-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-orange-400 rounded-2xl flex items-center justify-center mx-auto">
+              <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-400 rounded-2xl flex items-center justify-center mx-auto">
                 <Music className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-semibold text-gray-900">실험 정신</h3>
@@ -289,7 +289,7 @@ export default function TeamMembersSection() {
         </div>
 
         {/* 함께하기 */}
-        <Card className="bg-gradient-to-r from-orange-500 to-pink-500 border-0 shadow-2xl">
+        <Card className="bg-gradient-to-r from-teal-500 to-emerald-500 border-0 shadow-2xl">
           <CardContent className="p-8 lg:p-12 text-white text-center">
             <div className="max-w-3xl mx-auto space-y-6">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto">

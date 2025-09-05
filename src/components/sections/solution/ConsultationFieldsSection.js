@@ -68,7 +68,7 @@ export default function ConsultationFieldsSection() {
       subtitle: "긍정적인 변화 만들기",
       description: "일상생활에서의 어려운 행동들을 이해하고 개선할 수 있도록 도와드립니다",
       color: "from-purple-400 to-purple-500",
-      bgColor: "from-purple-50 to-pink-50",
+      bgColor: "from-purple-50 to-emerald-50",
       services: [
         {
           icon: Brain,
@@ -100,8 +100,8 @@ export default function ConsultationFieldsSection() {
       title: "정서 상담",
       subtitle: "마음 건강 돌보기",
       description: "아이와 가족의 정서적 어려움을 함께 나누고 해결책을 찾아갑니다",
-      color: "from-pink-400 to-pink-500",
-      bgColor: "from-pink-50 to-rose-50",
+      color: "from-emerald-400 to-emerald-500",
+      bgColor: "from-emerald-50 to-teal-50",
       services: [
         {
           icon: Heart,
@@ -166,8 +166,8 @@ export default function ConsultationFieldsSection() {
       title: "진로 지도",
       subtitle: "미래 설계하기",
       description: "아이의 특성과 흥미를 바탕으로 적합한 진로를 함께 탐색해봅니다",
-      color: "from-orange-400 to-orange-500",
-      bgColor: "from-orange-50 to-yellow-50",
+      color: "from-teal-400 to-teal-500",
+      bgColor: "from-teal-50 to-yellow-50",
       services: [
         {
           icon: Target,
@@ -202,7 +202,7 @@ export default function ConsultationFieldsSection() {
       <div className="container mx-auto px-4">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-orange-200 text-orange-700">
+          <Badge variant="outline" className="mb-4 border-teal-200 text-teal-700">
             <Target className="w-3 h-3 mr-1" />
             상담 분야
           </Badge>
@@ -348,7 +348,7 @@ export default function ConsultationFieldsSection() {
           <Card className="bg-white border-gray-200 shadow-lg">
             <CardContent className="p-8 lg:p-12">
               <div className="max-w-3xl mx-auto space-y-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-orange-400 to-pink-400 rounded-2xl flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-2xl flex items-center justify-center mx-auto">
                   <Heart className="w-8 h-8 text-white fill-current" />
                 </div>
                 
@@ -363,7 +363,7 @@ export default function ConsultationFieldsSection() {
                 </p>
                 
                 <div className="pt-4">
-                  <Button size="lg" className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white shadow-lg">
+                  <Button size="lg" className="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white shadow-lg">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     종합 상담 신청하기
                     <ArrowRight className="w-4 h-4 ml-2" />

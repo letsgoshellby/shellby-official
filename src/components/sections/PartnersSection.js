@@ -40,7 +40,7 @@ export default function PartnersSection() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <Loader2 className="w-8 h-8 animate-spin mx-auto text-orange-500" />
+            <Loader2 className="w-8 h-8 animate-spin mx-auto text-teal-500" />
             <p className="mt-4 text-gray-600">협력 파트너 정보를 불러오는 중...</p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function PartnersSection() {
       <div className="container mx-auto px-4">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-orange-200 text-orange-700">
+          <Badge variant="outline" className="mb-4 border-teal-200 text-teal-700">
             <Award className="w-3 h-3 mr-1" />
             신뢰할 수 있는 파트너십
           </Badge>
@@ -74,10 +74,10 @@ export default function PartnersSection() {
             const CategoryIcon = categoryInfo.icon
 
             return (
-              <Card key={partner.id} className="group hover:shadow-xl transition-all duration-300 border-gray-200 hover:border-orange-200 overflow-hidden">
+              <Card key={partner.id} className="group hover:shadow-xl transition-all duration-300 border-gray-200 hover:border-teal-200 overflow-hidden">
                 <CardContent className="p-6">
                   {/* 로고 영역 */}
-                  <div className="flex items-center justify-center h-20 mb-6 bg-gray-50 rounded-lg group-hover:bg-orange-50 transition-colors">
+                  <div className="flex items-center justify-center h-20 mb-6 bg-gray-50 rounded-lg group-hover:bg-teal-50 transition-colors">
                     {partner.logo_url ? (
                       <Image
                         src={partner.logo_url}
@@ -87,7 +87,7 @@ export default function PartnersSection() {
                         className="object-contain"
                       />
                     ) : (
-                      <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-orange-400 to-pink-400 rounded-lg">
+                      <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-teal-400 to-emerald-400 rounded-lg">
                         <CategoryIcon className="w-8 h-8 text-white" />
                       </div>
                     )}
@@ -119,7 +119,7 @@ export default function PartnersSection() {
                         href={partner.website_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center text-sm text-orange-600 hover:text-orange-700 font-medium transition-colors"
+                        className="inline-flex items-center text-sm text-teal-600 hover:text-teal-700 font-medium transition-colors"
                       >
                         <span>웹사이트 방문</span>
                         <ExternalLink className="w-3 h-3 ml-1" />
@@ -133,7 +133,7 @@ export default function PartnersSection() {
         </div>
 
         {/* 파트너십 혜택 */}
-        <div className="bg-gradient-to-br from-orange-50 to-pink-50 rounded-3xl p-8 lg:p-12">
+        <div className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-3xl p-8 lg:p-12">
           <div className="text-center mb-8">
             <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
               전문가 네트워크의 힘
@@ -182,7 +182,7 @@ export default function PartnersSection() {
         <div className="text-center mt-16">
           <div className="inline-flex items-center space-x-2 text-gray-600">
             <span className="text-sm">전문기관 파트너십 문의:</span>
-            <a href="mailto:partner@shellby.co.kr" className="text-orange-600 hover:text-orange-700 font-medium transition-colors">
+            <a href="mailto:partner@shellby.co.kr" className="text-teal-600 hover:text-teal-700 font-medium transition-colors">
               partner@shellby.co.kr
             </a>
           </div>

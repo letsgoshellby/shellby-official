@@ -22,12 +22,12 @@ export default function TeamHeroSection() {
   ]
 
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 relative overflow-hidden">
+    <section className="py-20 lg:py-32 bg-gradient-to-br from-blue-50 via-purple-50 to-emerald-50 relative overflow-hidden">
       {/* 배경 장식 요소들 */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-blue-200/30 to-purple-200/30 blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-purple-200/20 to-pink-200/20 blur-3xl"></div>
-        <div className="absolute top-1/4 left-1/3 w-32 h-32 rounded-full bg-gradient-to-br from-orange-200/40 to-pink-200/40 blur-2xl"></div>
+        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-purple-200/20 to-emerald-200/20 blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/3 w-32 h-32 rounded-full bg-gradient-to-br from-teal-200/40 to-emerald-200/40 blur-2xl"></div>
       </div>
 
       <div className="container relative mx-auto px-4">
