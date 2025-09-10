@@ -23,28 +23,11 @@ export default function TeamHeroSection() {
 
   return (
     <section className="py-20 lg:py-32 bg-gradient-to-br from-blue-50 via-purple-50 to-emerald-50 relative overflow-hidden">
-      {/* 배경 장식 요소들 */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-blue-200/30 to-purple-200/30 blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-purple-200/20 to-emerald-200/20 blur-3xl"></div>
-        <div className="absolute top-1/4 left-1/3 w-32 h-32 rounded-full bg-gradient-to-br from-teal-200/40 to-emerald-200/40 blur-2xl"></div>
-      </div>
 
       <div className="container relative mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* 텍스트 콘텐츠 */}
           <div className="space-y-8">
-            {/* 배지들 */}
-            <div className="flex flex-wrap items-center gap-3">
-              <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
-                <GraduationCap className="w-3 h-3 mr-1" />
-                대학생 창업팀
-              </Badge>
-              <Badge variant="outline" className="bg-purple-100 text-purple-800 border-purple-200">
-                <Lightbulb className="w-3 h-3 mr-1" />
-                2023년 시작
-              </Badge>
-            </div>
 
             {/* 메인 헤드라인 */}
             <div className="space-y-6">
