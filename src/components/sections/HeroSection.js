@@ -127,7 +127,7 @@ export default function HeroSection() {
 
           {/* 이미지/일러스트 영역 */}
           <div className="relative">
-            <div className="relative mx-auto max-w-md lg:max-w-lg">
+            <div className="relative mx-auto">
               {/* 메인 스마트폰 모형 */}
               <div className="relative z-10">
                 <div className="relative h-[calc(100vh-4rem)] w-full">
