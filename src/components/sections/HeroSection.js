@@ -36,11 +36,6 @@ export default function HeroSection() {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-emerald-50 to-teal-100">
-      {/* 배경 장식 요소들 */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-teal-200/30 to-emerald-200/30 blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-teal-200/20 to-emerald-200/20 blur-3xl"></div>
-      </div>
 
       <div className="container relative mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -127,17 +122,12 @@ export default function HeroSection() {
                   </div>
                 </Button>
               </div>
-              
-              {/* 추가 정보 */}
-              <div className="flex items-center space-x-4 text-sm text-gray-500">
-                <span>📱 iOS & Android 지원</span>
-              </div>
             </div>
           </div>
 
           {/* 이미지/일러스트 영역 */}
           <div className="relative">
-            <div className="relative mx-auto max-w-md lg:max-w-lg">
+            <div className="relative mx-auto">
               {/* 메인 스마트폰 모형 */}
               <div className="relative z-10">
                 <div className="relative h-[calc(100vh-4rem)] w-full">

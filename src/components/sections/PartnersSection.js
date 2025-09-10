@@ -150,9 +150,9 @@ export default function PartnersSection() {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-500 rounded-2xl flex items-center justify-center mx-auto">
                 <Building2 className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900">전문가와의 협력</h4>
+              <h4 className="text-lg font-semibold text-gray-900">전문가 협력</h4>
               <p className="text-gray-600 text-sm leading-relaxed">
-                전문 상담 기관과의 협력으로 신뢰도가 높은 상담 서비스
+                전문 기관과의 협력으로 신뢰도가 높아요
               </p>
             </div>
 
@@ -162,7 +162,7 @@ export default function PartnersSection() {
               </div>
               <h4 className="text-lg font-semibold text-gray-900">개인 맞춤형 상담</h4>
               <p className="text-gray-600 text-sm leading-relaxed">
-                특수교육 및 학습치료 전문기관과의 파트너십으로 맞춤형 솔루션 추천
+                비대면 상담으로 개개인 맞춤형 솔루션을 받아 보세요
               </p>
             </div>
 
@@ -170,9 +170,9 @@ export default function PartnersSection() {
               <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900">가격 혁신</h4>
+              <h4 className="text-lg font-semibold text-gray-900">지속적 개입</h4>
               <p className="text-gray-600 text-sm leading-relaxed">
-                경쟁 서비스와 대비하여 가격은 낮게, 품질은 최고로
+                솔루션을 통해 아이의 변화를 체감해 보세요
               </p>
             </div>
           </div>
@@ -182,8 +182,8 @@ export default function PartnersSection() {
         <div className="text-center mt-16">
           <div className="inline-flex items-center space-x-2 text-gray-600">
             <span className="text-sm">전문기관 파트너십 문의:</span>
-            <a href="mailto:partner@shellby.co.kr" className="text-teal-600 hover:text-teal-700 font-medium transition-colors">
-              partner@shellby.co.kr
+            <a href="mailto:letschugalong@gmail.com" className="text-teal-600 hover:text-teal-700 font-medium transition-colors">
+              letschugalong@gmail.com
             </a>
           </div>
         </div>

@@ -51,7 +51,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <span className="text-sm text-gray-600">
-                  📧 help@shellby.co.kr
+                  📧 letschugalong@gmail.com
                 </span>
               </li>
             </ul>
