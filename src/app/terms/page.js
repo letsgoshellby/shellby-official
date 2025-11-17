@@ -7,7 +7,7 @@ export default function TermsPage() {
   const [termsContent, setTermsContent] = useState("");
 
   useEffect(() => {
-    fetch("/docs/서비스 이용약관 23a24a29a4fc80729f63cb1be69ff450.md")
+    fetch("/docs/service_terms.md")
       .then(response => response.text())
       .then(text => {
         const htmlContent = text
