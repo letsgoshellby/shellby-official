@@ -17,7 +17,7 @@ export const metadata = {
   title: "셸비",
   description: "우리 아이 성장메이트, 셸비와 함께해요.",
   icons: {
-    icon: "/shellby.png",
+    icon: "/shellby_symbol.png",
   }
 };
 
