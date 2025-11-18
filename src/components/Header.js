@@ -29,19 +29,14 @@ export default function Header() {
 
   const navigationItems = [
     {
-      title: "홈",
-      href: "/",
-      description: "🏡 따뜻한 시작을 함께해요."
+      title: "팀 소개",
+      href: "/team",
+      description: "🎉 뭐든지 해내는 우리 팀을 만나보세요."
     },
     {
       title: "솔루션",
       href: "/solution",
       description: "🧑🏻‍💻 우리의 상담 서비스를 알아보세요."
-    },
-    {
-      title: "셸비 팀",
-      href: "/team",
-      description: "🎉 뭐든지 해내는 우리 팀을 만나보세요."
     },
     {
       title: "소식",
@@ -68,11 +63,11 @@ export default function Header() {
 
         {/* 데스크톱 네비게이션 */}
         <NavigationMenu className="hidden md:flex">
-          <NavigationMenuList>
+          <NavigationMenuList className={`gap-8`}>
             {navigationItems.map((item) => (
               <NavigationMenuItem key={item.href}>
                 <NavigationMenuLink asChild>
-                  <Link href={item.href} className={`text-gray-700 hover:text-teal-600 hover:bg-teal-50 transition-colors`}>
+                  <Link href={item.href} className={` font-extrabold hover:text-teal-600 hover:bg-teal-50 transition-colors`}>
                     {item.title}
                   </Link>
                 </NavigationMenuLink>
