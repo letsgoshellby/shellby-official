@@ -59,14 +59,11 @@ export default function Header() {
             <Image 
             src="/shellby.png"
             alt="셸비 로고"
-            width={36}
-            height={36}
+            width={64}
+            height={48}
             className="rounded-md"
             ></Image>
           </div>
-          <span className="font-bold text-xl">
-            셸비
-          </span>
         </Link>
 
         {/* 데스크톱 네비게이션 */}
@@ -75,7 +72,7 @@ export default function Header() {
             {navigationItems.map((item) => (
               <NavigationMenuItem key={item.href}>
                 <NavigationMenuLink asChild>
-                  <Link href={item.href} className={`${navigationMenuTriggerStyle()} text-gray-700 hover:text-teal-600 hover:bg-teal-50 transition-colors`}>
+                  <Link href={item.href} className={`text-gray-700 hover:text-teal-600 hover:bg-teal-50 transition-colors`}>
                     {item.title}
                   </Link>
                 </NavigationMenuLink>
@@ -84,7 +81,6 @@ export default function Header() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* CTA 버튼 제거 - 더 깔끔한 헤더 */}
 
         {/* 모바일 메뉴 버튼 */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
