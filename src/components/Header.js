@@ -29,14 +29,14 @@ export default function Header() {
 
   const navigationItems = [
     {
-      title: "팀 소개",
-      href: "/team",
-      description: "🎉 뭐든지 해내는 우리 팀을 만나보세요."
-    },
-    {
-      title: "솔루션",
+      title: "셸메이트",
       href: "/solution",
       description: "🧑🏻‍💻 우리의 상담 서비스를 알아보세요."
+    },
+    {
+      title: "셸비팀",
+      href: "/team",
+      description: "🎉 뭐든지 해내는 우리 팀을 만나보세요."
     },
     {
       title: "소식",
@@ -46,7 +46,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-green-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* 로고 섹션 */}
         <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
