@@ -286,38 +286,7 @@ export default function TeamMembersSection() {
               </p>
             </CardContent>
           </Card>
-        </div>
-
-        {/* 함께하기 */}
-        <Card className="bg-gradient-to-r from-teal-500 to-emerald-500 border-0 shadow-2xl">
-          <CardContent className="p-8 lg:p-12 text-white text-center">
-            <div className="max-w-3xl mx-auto space-y-6">
-              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto">
-                <Users className="w-8 h-8" />
-              </div>
-              
-              <h3 className="text-2xl lg:text-3xl font-bold">
-                우리와 함께하고 싶다면?
-              </h3>
-              
-              <p className="text-lg opacity-90 leading-relaxed">
-                셸비 팀에 관심이 있으시거나, 함께 의미있는 일을 하고 싶으시다면
-                <br className="hidden sm:block" />
-                언제든 연락해 주세요! 🤗
-              </p>
-              
-              <div className="pt-4 space-y-2">
-                <Button size="lg" className="bg-white hover:bg-gray-100 text-gray-900">
-                  <Mail className="w-4 h-4 mr-2" />
-                  team@shellby.co.kr
-                </Button>
-                <p className="text-sm opacity-80">
-                  인턴, 파트타임, 프로젝트 협업 등 다양한 형태로 함께할 수 있어요!
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+        </div>      
       </div>
     </section>
   )
