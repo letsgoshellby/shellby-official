@@ -1,24 +1,25 @@
-import { NotionAPI } from "notion-client";
-import NewsClient from "./NewsClient";
-
-const notion = new NotionAPI();
-
-async function getNotionData() {
-  try {
-    // 여기에 Notion 페이지 ID 입력
-    const testPageId = "26524a29a4fc8061a5a4dcde024d3d81";
-    
-    console.log("Fetching Notion page from server:", testPageId);
-    const recordMap = await notion.getPage(testPageId);
-    return recordMap;
-  } catch (error) {
-    console.error("Failed to fetch Notion page:", error);
-    return null;
-  }
-}
+import Image from "next/image"
 
 export default async function NewsPage() {
-  const recordMap = await getNotionData();
 
-  return <NewsClient recordMap={recordMap} />;
+  return (
+    <section className="mt-16 w-screen text-center">
+      <div className="max-w-[768px] mx-auto px-4 md:px-8">
+        <div>
+
+        </div>
+        <h1 className=" text-3xl font-extrabold">셸비 소식</h1>
+        <div>
+          <Image 
+          src="/shellby.png" 
+          alt="셸비" 
+          width={256}
+          height={256}
+          className=" w-20 h-12"
+          />
+
+        </div>
+      </div>
+    </section>
+  )
 }
