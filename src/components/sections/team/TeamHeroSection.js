@@ -11,7 +11,7 @@ export default function TeamHeroSection() {
           <div className="relative w-full overflow-hidden rounded-lg" style={{ aspectRatio: '500/233' }}>
             <Image
               src="/team_together_1.png"
-              alt="Team members"
+              alt="Team members - dev"
               fill
               className="object-cover"
             />
@@ -21,7 +21,7 @@ export default function TeamHeroSection() {
           <div className="relative w-full overflow-hidden rounded-lg" style={{ aspectRatio: '500/233' }}>
             <Image
               src="/team_together_3.png"
-              alt="Team members"
+              alt="Team members - plan"
               fill
               className="object-cover"
             />
@@ -42,7 +42,7 @@ export default function TeamHeroSection() {
           <div className="relative w-full overflow-hidden rounded-lg" style={{ aspectRatio: '500/233' }}>
             <Image
               src="/team_together_2.png"
-              alt="Team members"
+              alt="Team members - together"
               fill
               className="object-cover"
             />
