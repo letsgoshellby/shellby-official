@@ -37,11 +37,6 @@ export default function Header() {
       title: "셸비팀",
       href: "/team",
       description: "🎉 뭐든지 해내는 우리 팀을 만나보세요."
-    },
-    {
-      title: "소식",
-      href: "/news",
-      description: "🐢 셸비가 전해 온 따끈따끈한 정보를 받아보세요."
     }
   ]
 
