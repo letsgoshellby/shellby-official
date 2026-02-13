@@ -2,23 +2,7 @@
 import { supabase } from './supabase'
 import { getTeamMemberAvatarUrl } from './imageHelpers'
 
-// 1. 최근 소식 가져오기
-export async function getLatestNews(limit = 3) {
-  const { data, error } = await supabase
-    .from('news')
-    .select('*')
-    .eq('is_published', true)
-    .order('published_at', { ascending: false })
-    .limit(limit)
-
-  if (error) {
-    console.error('Error fetching news:', error)
-    return []
-  }
-  return data
-}
-
-// 2. 앱 다운로드 링크 가져오기
+// 1. 앱 다운로드 링크 가져오기
 export async function getAppInfo() {
   const { data, error } = await supabase
     .from('app_info')

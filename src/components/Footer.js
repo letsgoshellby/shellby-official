@@ -37,11 +37,6 @@ export default function Footer() {
                   솔루션
                 </Link>
               </li>
-              <li>
-                <Link href="/news" className="text-sm text-gray-600 hover:text-teal-600 transition-colors">
-                  소식
-                </Link>
-              </li>
             </ul>
           </div>
 
