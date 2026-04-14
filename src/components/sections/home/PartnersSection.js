@@ -49,7 +49,7 @@ export default function PartnersSection() {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" aria-label="협력 파트너">
       <div className="container mx-auto px-4">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
@@ -120,9 +120,10 @@ export default function PartnersSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-sm text-teal-600 hover:text-teal-700 font-medium transition-colors"
+                        aria-label={`${partner.name} 웹사이트 방문 (새 탭에서 열림)`}
                       >
                         <span>웹사이트 방문</span>
-                        <ExternalLink className="w-3 h-3 ml-1" />
+                        <ExternalLink className="w-3 h-3 ml-1" aria-hidden="true" />
                       </a>
                     )}
                   </div>

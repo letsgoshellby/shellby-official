@@ -75,12 +75,12 @@ export default function Header() {
         {/* 모바일 메뉴 버튼 */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon" className="text-gray-700">
-              <Menu className="h-5 w-5" />
+            <Button variant="ghost" size="icon" className="text-gray-700" aria-expanded={isOpen} aria-controls="mobile-menu" aria-label="메뉴 열기">
+              <Menu className="h-5 w-5" aria-hidden="true" />
               <span className="sr-only">메뉴 열기</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] bg-white">
+          <SheetContent side="right" className="w-[300px] bg-white" id="mobile-menu">
             <SheetHeader className="text-left">
               <SheetTitle className="flex items-center space-x-2">
                 <div>
