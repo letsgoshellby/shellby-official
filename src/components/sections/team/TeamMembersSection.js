@@ -84,12 +84,12 @@ export default function TeamMembersSection() {
             <Users className="w-3 h-3 mr-1" />
             우리 팀원들
           </Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             이런 사람들이 만들고 있어요
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             각자 다른 전공과 성격을 가지고 있지만,
-            <br className="hidden sm:block" />
+            <br />
             셸비를 더 좋게 만들고 싶다는 마음은 하나예요
           </p>
         </div>
@@ -212,7 +212,7 @@ export default function TeamMembersSection() {
                         {/* 연락처 */}
                         <div>
                           <h4 className="text-sm font-semibold text-gray-800 mb-2">연락하기</h4>
-                          <div className="flex space-x-2">
+                          <div className="flex flex-wrap gap-2">
                             <Button size="sm" variant="outline" className="text-xs">
                               <Mail className="w-3 h-3 mr-1" />
                               이메일

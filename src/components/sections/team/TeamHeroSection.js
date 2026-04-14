@@ -51,12 +51,16 @@ export default function TeamHeroSection() {
       </div>
       <div className='w-full flex justify-center'>
         <div className='max-w-[1504px] md:max-w-6xl w-full p-4'>
-          <h1 className='text-3xl' style={{ letterSpacing: '-0.025em' }}>안녕하세요, 우리는 <span className='font-bold'>셸비</span>입니다.</h1>
-          <p className=' text-lg mt-1' style={{ letterSpacing: '-0.025em' }}>
-            느린학습자 가족들이 겪는 어려움을 보며, <span className='font-bold'>우리가 뭔가 도울 수 있지 않을까</span> 라는 생각에서 시작됐어요.
+          <h1 className='text-2xl sm:text-3xl' style={{ letterSpacing: '-0.025em' }}>안녕하세요, 우리는 <span className='font-bold'>셸비</span>입니다.</h1>
+          <p className=' text-base sm:text-lg mt-1' style={{ letterSpacing: '-0.025em' }}>
+            느린학습자 가족들이 겪는 어려움을 보며,{" "}
+            <br className="block sm:hidden" />
+            <span className='font-bold'>우리가 뭔가 도울 수 있지 않을까</span> 라는 생각에서 시작됐어요.
           </p>
-          <p className=' text-lg' style={{ letterSpacing: '-0.025em' }}>
-            아직 대학생이고, 완벽하지 않지만 <span className='font-bold'>진심으로 의미 있는 변화</span>를 만들고 싶어해요.
+          <p className='text-base sm:text-lg' style={{ letterSpacing: '-0.025em' }}>
+            아직 대학생이고, 완벽하지 않지만{" "}
+            <br className="block sm:hidden" />
+            <span className='font-bold'>진심으로 의미 있는 변화</span>를 만들고 싶어해요.
           </p>
         </div>
       </div>

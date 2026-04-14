@@ -132,7 +132,7 @@ export default function TeamStorySection() {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             완벽하지 않았던 시작부터 지금까지,
-            <br className="hidden sm:block" />
+            <br />
             우리가 겪은 진짜 이야기를 들려드릴게요
           </p>
         </div>
@@ -249,7 +249,7 @@ export default function TeamStorySection() {
               <div className="space-y-4 text-lg opacity-90 leading-relaxed">
                 <p>
                   "아직 부족한 점이 많지만, 사용자분들이 도움받고 계신다는 걸 보면
-                  <br className="hidden sm:block" />
+                  <br />
                   정말 뿌듯하고 더 열심히 하고 싶어져요."
                 </p>
                 

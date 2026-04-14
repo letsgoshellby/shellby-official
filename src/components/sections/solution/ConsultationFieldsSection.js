@@ -211,14 +211,14 @@ export default function ConsultationFieldsSection() {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             느린학습자와 가족의 다양한 어려움에 대해
-            <br className="hidden sm:block" />
+            <br />
             전문적이고 따뜻한 상담을 제공합니다
           </p>
         </div>
 
         {/* 상담 분야 탭 */}
         <Tabs value={activeField} onValueChange={setActiveField} className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-12 h-auto p-1 bg-white shadow-lg rounded-2xl">
+          <TabsList className="grid w-full grid-cols-3 md:grid-cols-5 mb-12 h-auto p-1 bg-white shadow-lg rounded-2xl">
             {consultationFields.map((field) => {
               const IconComponent = field.icon
               return (
@@ -356,9 +356,9 @@ export default function ConsultationFieldsSection() {
                   어떤 상담이 필요할지 모르겠다면?
                 </h3>
                 
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
                   괜찮아요! 셸비의 전문가들이 먼저 상담을 통해
-                  <br className="hidden sm:block" />
+                  <br />
                   가장 적합한 상담 분야를 찾아드릴게요.
                 </p>
                 

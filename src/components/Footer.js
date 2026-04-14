@@ -76,11 +76,11 @@ export default function Footer() {
         <div className="space-y-6">
           {/* 이용약관 및 개인정보처리방침 */}
           <div className="flex flex-wrap items-center gap-4 text-sm">
-            <Link href="/terms" className="text-gray-800 hover:text-teal-600 font-medium transition-colors">
+            <Link href="/terms/client/service_terms" className="text-gray-800 hover:text-teal-600 font-medium transition-colors">
               이용약관
             </Link>
             <span className="text-gray-300">|</span>
-            <Link href="/privacy" className="text-gray-800 hover:text-teal-600 font-medium transition-colors">
+            <Link href="/terms/client/privacy" className="text-gray-800 hover:text-teal-600 font-medium transition-colors">
               개인정보처리방침
             </Link>
             {/* <span className="text-gray-300">|</span>

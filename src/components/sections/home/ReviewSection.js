@@ -77,7 +77,7 @@ export default function ReviewsSection() {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" aria-label="이용 후기">
       <div className="container mx-auto px-4">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
@@ -86,11 +86,11 @@ export default function ReviewsSection() {
             진짜 후기
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            셸비와 함께한 가족들의 이야기
+            함께한 가족들의 이야기
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            실제로 셸비 상담 서비스를 이용하신 가족들이 직접 전해주는
-            <br className="hidden sm:block" />
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            실제 상담 서비스를 이용하신 가족들이 직접 전해주는
+            <br />
             따뜻하고 진솔한 경험담을 들어보세요
           </p>
         </div>
@@ -132,16 +132,18 @@ export default function ReviewsSection() {
                     size="icon"
                     className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg border-gray-200 hover:bg-teal-50 hover:border-teal-200 -ml-6 hidden lg:flex"
                     onClick={prevReview}
+                    aria-label="이전 후기"
                   >
-                    <ChevronLeft className="w-4 h-4" />
+                    <ChevronLeft className="w-4 h-4" aria-hidden="true" />
                   </Button>
                   <Button
                     variant="outline"
                     size="icon"
                     className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg border-gray-200 hover:bg-teal-50 hover:border-teal-200 -mr-6 hidden lg:flex"
                     onClick={nextReview}
+                    aria-label="다음 후기"
                   >
-                    <ChevronRight className="w-4 h-4" />
+                    <ChevronRight className="w-4 h-4" aria-hidden="true" />
                   </Button>
                 </>
               )}
@@ -200,11 +202,13 @@ export default function ReviewsSection() {
                     <button
                       key={index}
                       className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                        index === currentIndex 
-                          ? 'bg-teal-500 scale-110' 
+                        index === currentIndex
+                          ? 'bg-teal-500 scale-110'
                           : 'bg-gray-300 hover:bg-gray-400'
                       }`}
                       onClick={() => scrollToReview(index)}
+                      aria-label={`${index + 1}번째 후기로 이동`}
+                      aria-current={index === currentIndex ? 'true' : undefined}
                     />
                   ))}
                 </div>

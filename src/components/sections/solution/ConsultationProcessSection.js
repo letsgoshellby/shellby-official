@@ -25,7 +25,7 @@ export default function ConsultationProcessSection() {
       icon: Download,
       title: "앱 다운로드",
       subtitle: "간편하게 시작하기",
-      description: "App Store나 Google Play에서 셸비 앱을 다운로드하고 회원가입을 해주세요.",
+      description: "App Store나 Google Play에서 셸비의 앱 셸메이트를 다운로드하고 회원가입을 해주세요.",
       details: [
         "무료 다운로드 및 가입",
         "간단한 본인 인증",
@@ -114,12 +114,12 @@ export default function ConsultationProcessSection() {
             <Play className="w-3 h-3 mr-1" />
             이용 방법
           </Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             이렇게 간단하게 시작할 수 있어요
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             복잡한 절차 없이 4단계만 거치면
-            <br className="hidden sm:block" />
+            <br />
             전문가와의 따뜻한 상담이 시작됩니다
           </p>
         </div>
@@ -231,9 +231,9 @@ export default function ConsultationProcessSection() {
                 준비되셨나요?
               </h3>
               
-              <p className="text-lg opacity-90 leading-relaxed">
-                첫 번째 단계는 앱을 다운로드하는 것부터 시작해요.
-                <br className="hidden sm:block" />
+              <p className="text-base sm:text-lg opacity-90 leading-relaxed">
+                첫 번째 단계는 앱을 다운로드하는 것부터.
+                <br />
                 지금 바로 셸비와 함께 새로운 시작을 해보세요!
               </p>
               
