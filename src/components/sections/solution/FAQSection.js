@@ -117,9 +117,9 @@ export default function FAQSection() {
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             자주 묻는 질문들
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             셸비 이용에 대해 궁금한 점들을 미리 정리해봤어요.
-            <br className="hidden sm:block" />
+            <br />
             찾는 답변이 없다면 언제든 문의해 주세요!
           </p>
         </div>
@@ -268,7 +268,7 @@ export default function FAQSection() {
                 
                 <p className="text-lg opacity-90 leading-relaxed">
                   궁금한 점이 있으시면 언제든 연락해 주세요.
-                  <br className="hidden sm:block" />
+                  <br />
                   친절하게 상세히 안내해드릴게요!
                 </p>
                 

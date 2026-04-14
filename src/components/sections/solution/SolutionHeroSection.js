@@ -52,17 +52,17 @@ export default function SolutionHeroSection() {
     {
       icon: Video,
       title: "화상 상담",
-      description: "얼굴을 보며 진행하는 따뜻한 상담"
+      description: <>얼굴을 보며 진행하는<br className="block sm:hidden" />따뜻한 상담</>
     },
     {
       icon: Phone,
       title: "음성 상담",
-      description: "부담 없이 편안하게 대화해요"
+      description: <>부담 없이 편안하게<br className="block sm:hidden" />대화해요</>
     },
     {
       icon: MessageCircle,
       title: "채팅 상담",
-      description: "글로 차근차근 소통할 수 있어요"
+      description: <>글로 차근차근<br className="block sm:hidden" />소통할 수 있어요</>
     }
   ]
 
@@ -124,12 +124,12 @@ export default function SolutionHeroSection() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                   혼자 고민
                 </span>하지{" "}
-                <br className="hidden lg:block" />
+                <br />
                 마세요
               </h1>
               <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed">
                 느린학습자와 가족을 위한 전문 상담이
-                <br className="hidden lg:block" />
+                <br />
                 이제 스마트폰으로 간편하게
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function SolutionHeroSection() {
 
             {/* 앱 다운로드 섹션 */}
             <div className="space-y-4">
-              <p className="text-gray-700 font-medium">지금 바로 셸비 앱을 다운로드하세요</p>
+              <p className="text-gray-700 font-medium">지금 바로 셸비의 앱 셸메이트를 다운로드하세요</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
@@ -276,16 +276,16 @@ export default function SolutionHeroSection() {
                 </div>
               </div>
 
-              {/* 플로팅 요소들 */}
-              <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-green-400 to-green-500 rounded-2xl flex items-center justify-center shadow-lg">
+              {/* 플로팅 요소들 — 모바일에서 숨김 */}
+              <div className="hidden sm:flex absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-green-400 to-green-500 rounded-2xl items-center justify-center shadow-lg">
                 <CheckCircle className="w-8 h-8 text-white" />
               </div>
-              
-              <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-yellow-400 to-teal-400 rounded-xl flex items-center justify-center shadow-lg">
+
+              <div className="hidden sm:flex absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-yellow-400 to-teal-400 rounded-xl items-center justify-center shadow-lg">
                 <Star className="w-6 h-6 text-white fill-current" />
               </div>
 
-              <div className="absolute top-1/2 -left-8 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
+              <div className="hidden sm:flex absolute top-1/2 -left-8 w-12 h-12 bg-white rounded-full items-center justify-center shadow-lg">
                 <Zap className="w-6 h-6 text-purple-500" />
               </div>
             </div>
