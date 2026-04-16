@@ -3,6 +3,6 @@ import TermsBase from "@/components/TermsBase";
 
 export default function ClientPrivacyTermsPage() {
   return (
-    <TermsBase location={"/term_data/client_privacy.md"}></TermsBase>
+    <TermsBase location={"/term_data/client_privacy.md"} tabType="client"></TermsBase>
   )
 }

@@ -3,6 +3,6 @@ import TermsBase from "@/components/TermsBase";
 
 export default function ExpertServiceTermsPage() {
   return (
-    <TermsBase location={"/term_data/expert_service_terms.md"}></TermsBase>
+    <TermsBase location={"/term_data/expert_service_terms.md"} tabType="expert" tabGroup="service"></TermsBase>
   )
 }

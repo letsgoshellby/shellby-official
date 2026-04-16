@@ -3,6 +3,6 @@ import TermsBase from "@/components/TermsBase";
 
 export default function ClientServicePage() {
   return (
-    <TermsBase location={"/term_data/client_service_terms.md"}></TermsBase>
+    <TermsBase location={"/term_data/client_service_terms.md"} tabType="client" tabGroup="service"></TermsBase>
   )
 }
