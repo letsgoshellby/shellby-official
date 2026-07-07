@@ -30,8 +30,9 @@ export default function Header() {
   const navigationItems = [
     {
       title: "셸메이트",
-      href: "/solution",
-      description: "🧑🏻‍💻 우리의 상담 서비스를 알아보세요."
+      href: "https://shellmate.letsgoshellby.com/",
+      description: "🧑🏻‍💻 우리의 상담 서비스를 알아보세요.",
+      external: true
     },
     {
       title: "셸비팀",
@@ -62,7 +63,7 @@ export default function Header() {
             {navigationItems.map((item) => (
               <NavigationMenuItem key={item.href}>
                 <NavigationMenuLink asChild>
-                  <Link href={item.href} className={` font-extrabold hover:text-teal-600 hover:bg-teal-50 transition-colors`}>
+                  <Link href={item.href} className={` font-extrabold hover:text-teal-600 hover:bg-teal-50 transition-colors`} {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}>
                     {item.title}
                   </Link>
                 </NavigationMenuLink>
@@ -103,11 +104,12 @@ export default function Header() {
               {/* 모바일 네비게이션만 유지 */}
               <nav className="flex flex-col space-y-4">
                 {navigationItems.map((item) => (
-                  <Link 
+                  <Link
                     key={item.href}
-                    href={item.href} 
+                    href={item.href}
                     className="flex flex-col space-y-1 p-3 rounded-lg hover:bg-teal-50 transition-colors group"
                     onClick={() => setIsOpen(false)}
+                    {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
                   >
                     <span className="font-medium text-gray-800 group-hover:text-teal-600">
                       {item.title}
