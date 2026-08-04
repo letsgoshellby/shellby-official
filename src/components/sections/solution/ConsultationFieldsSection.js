@@ -34,8 +34,8 @@ export default function ConsultationFieldsSection() {
       title: "학습 지원",
       subtitle: "배움의 즐거움 찾기",
       description: "개별 학습 속도에 맞춘 맞춤형 학습 방법과 전략을 제공합니다",
-      color: "from-blue-400 to-blue-500",
-      bgColor: "from-blue-50 to-indigo-50",
+      color: "from-green-700 to-green-900",
+      bgColor: "from-green-50 to-emerald-50",
       services: [
         {
           icon: Target,
@@ -67,8 +67,8 @@ export default function ConsultationFieldsSection() {
       title: "행동 개선",
       subtitle: "긍정적인 변화 만들기",
       description: "일상생활에서의 어려운 행동들을 이해하고 개선할 수 있도록 도와드립니다",
-      color: "from-purple-400 to-purple-500",
-      bgColor: "from-purple-50 to-emerald-50",
+      color: "from-green-600 to-green-800",
+      bgColor: "from-green-50 to-green-100",
       services: [
         {
           icon: Brain,
@@ -100,8 +100,8 @@ export default function ConsultationFieldsSection() {
       title: "정서 상담",
       subtitle: "마음 건강 돌보기",
       description: "아이와 가족의 정서적 어려움을 함께 나누고 해결책을 찾아갑니다",
-      color: "from-emerald-400 to-emerald-500",
-      bgColor: "from-emerald-50 to-teal-50",
+      color: "from-emerald-600 to-green-700",
+      bgColor: "from-emerald-50 to-green-50",
       services: [
         {
           icon: Heart,
@@ -133,8 +133,8 @@ export default function ConsultationFieldsSection() {
       title: "가족 상담",
       subtitle: "함께 성장하기",
       description: "가족 전체가 함께 성장할 수 있는 소통 방법과 양육 전략을 제공합니다",
-      color: "from-green-400 to-green-500",
-      bgColor: "from-green-50 to-emerald-50",
+      color: "from-green-700 to-emerald-800",
+      bgColor: "from-green-50 to-emerald-100",
       services: [
         {
           icon: Home,
@@ -166,8 +166,8 @@ export default function ConsultationFieldsSection() {
       title: "진로 지도",
       subtitle: "미래 설계하기",
       description: "아이의 특성과 흥미를 바탕으로 적합한 진로를 함께 탐색해봅니다",
-      color: "from-teal-400 to-teal-500",
-      bgColor: "from-teal-50 to-yellow-50",
+      color: "from-emerald-700 to-green-800",
+      bgColor: "from-emerald-50 to-green-50",
       services: [
         {
           icon: Target,
@@ -202,7 +202,7 @@ export default function ConsultationFieldsSection() {
       <div className="container mx-auto px-4">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-teal-200 text-teal-700">
+          <Badge variant="outline" className="mb-4 border-green-200 text-green-800">
             <Target className="w-3 h-3 mr-1" />
             상담 분야
           </Badge>
@@ -228,7 +228,7 @@ export default function ConsultationFieldsSection() {
                   className="flex flex-col items-center space-y-2 p-4 rounded-xl data-[state=active]:bg-gradient-to-r data-[state=active]:text-white transition-all duration-200"
                   style={activeField === field.id ? {
                     background: `linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to))`,
-                    backgroundImage: `linear-gradient(to right, rgb(59 130 246), rgb(147 51 234))`
+                    backgroundImage: `linear-gradient(to right, #1b4128, #2d6a4f)`
                   } : {}}
                 >
                   <IconComponent className="w-5 h-5" />
@@ -265,7 +265,7 @@ export default function ConsultationFieldsSection() {
                             <ul className="space-y-1">
                               {field.targetAudience.map((audience, index) => (
                                 <li key={index} className="flex items-center space-x-2">
-                                  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                                  <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0" />
                                   <span className="text-sm text-gray-600">{audience}</span>
                                 </li>
                               ))}
@@ -313,7 +313,7 @@ export default function ConsultationFieldsSection() {
                     </div>
 
                     {/* 상담 신청 CTA */}
-                    <Card className="mt-8 bg-gradient-to-r from-blue-500 to-purple-500 border-0 shadow-xl">
+                    <Card className="mt-8 border-0 shadow-xl" style={{ background: "linear-gradient(to right, #1b4128, #2d6a4f)" }}>
                       <CardContent className="p-6 text-white text-center">
                         <div className="space-y-4">
                           <h4 className="text-lg font-bold">
@@ -343,7 +343,7 @@ export default function ConsultationFieldsSection() {
           })}
         </Tabs>
 
-        {/* 추가 안내 */}
+        {/* 추가 안내
         <div className="mt-20 text-center">
           <Card className="bg-white border-gray-200 shadow-lg">
             <CardContent className="p-8 lg:p-12">
@@ -376,7 +376,7 @@ export default function ConsultationFieldsSection() {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
       </div>
     </section>
   )

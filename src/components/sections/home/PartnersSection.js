@@ -58,12 +58,12 @@ export default function PartnersSection() {
             신뢰할 수 있는 파트너십
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            검증된 전문기관과 함께합니다
+            최고의 전문가들과 함께합니다
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            셸비는 엄선된 의료기관, 교육센터, 치료기관과 협력하여 
+            셸비는 <b>명지대 인지행동치료연구소</b>와 <b>한국인지행동치료상담학회</b>와 협력하여
             <br className="block" />
-            최고 수준의 전문 상담 서비스를 제공합니다.
+            최고 수준의 상담 서비스를 제공합니다.
           </p>
         </div>
 

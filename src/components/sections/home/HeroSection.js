@@ -35,7 +35,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-emerald-50 to-teal-100" aria-label="셸비 소개">
+    <section className="relative overflow-hidden" style={{ background: "linear-gradient(135deg, #f0f7f4 0%, #e6f2ec 50%, #d4e8dc 100%)" }} aria-label="셸비 소개">
 
       <div className="container relative mx-auto px-4 py-12 lg:py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -45,20 +45,16 @@ export default function HeroSection() {
             {/* 메인 헤드라인 */}
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                느린학습자 아이의{" "}
+                우리 아이 성장메이트,{" "}
                 <br className=" block" />
-                <span className="">
-                  보호자를 위한{" "}
+                <span style={{ color: "#1b4128" }}>
+                  셸메이트
                 </span>
-                <br className=" block" />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">
-                  1:1 맞춤형 상담
-                </span> 솔루션
               </h1>
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
-                내가 원하는 전문가로부터{" "}
+                발달이 느린 아이를 둔 보호자를 위한{" "}
                 <br className=" block" />
-                필요한 솔루션을 온라인으로 받아보세요
+                1:1 맞춤형 중장기 코칭
               </p>
             </div>
 
@@ -68,19 +64,19 @@ export default function HeroSection() {
                 <div className="flex items-center justify-center w-8 h-8 bg-teal-100 rounded-lg">
                   <Users className="w-4 h-4 text-teal-600" />
                 </div>
-                <span className="text-sm font-medium">검증된 전문가</span>
+                <span className="text-sm font-medium">경력과 정보가 확실한 전문가</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <div className="flex items-center justify-center w-8 h-8 bg-emerald-100 rounded-lg">
                   <Shield className="w-4 h-4 text-emerald-600" />
                 </div>
-                <span className="text-sm font-medium">안전한 상담</span>
+                <span className="text-sm font-medium">맞춤형 커리큘럼 제공</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <div className="flex items-center justify-center w-8 h-8 bg-teal-100 rounded-lg">
                   <Heart className="w-4 h-4 text-teal-600 fill-current" />
                 </div>
-                <span className="text-sm font-medium">따뜻한 케어</span>
+                <span className="text-sm font-medium">밀착 케어 및 조언</span>
               </div>
             </div>
 
@@ -131,13 +127,13 @@ export default function HeroSection() {
           <div className="relative hidden lg:block">
             <div className="relative mx-auto">
               <div className="relative z-10">
-                <div className="relative h-[calc(100vh-4rem)] w-full">
+                <div className="relative h-[calc(100vh-4rem)] w-full -translate-x-8">
                   <Image
-                    src={"/shellmate_hand.png"}
+                    src={"/shellmate_app_mock.png"}
                     alt="셸메이트"
                     fill
                     style={{ objectFit: "cover", objectPosition: "center" }}
-                    sizes="50vw"
+                    sizes="60vw"
                     priority
                   />
                 </div>
