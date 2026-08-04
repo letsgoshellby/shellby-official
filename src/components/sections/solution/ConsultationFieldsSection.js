@@ -20,7 +20,6 @@ import {
   ArrowRight,
   Lightbulb,
   Smile,
-  Home,
   Star
 } from "lucide-react"
 
@@ -31,35 +30,36 @@ export default function ConsultationFieldsSection() {
     {
       id: "learning",
       icon: BookOpen,
-      title: "학습 지원",
-      subtitle: "배움의 즐거움 찾기",
-      description: "개별 학습 속도에 맞춘 맞춤형 학습 방법과 전략을 제공합니다",
+      title: "발달지연 도움",
+      subtitle: "아이 속도에 맞는 양육법 배우기",
+      description: "개별 발달 속도에 알맞은 맞춤형 양육 방법과 전략을 제공합니다",
       color: "from-green-700 to-green-900",
       bgColor: "from-green-50 to-emerald-50",
       services: [
         {
           icon: Target,
-          name: "개별 학습 계획",
-          description: "아이의 학습 특성을 파악하여 맞춤형 학습 로드맵을 제공해요"
+          name: "우리 아이 발달 특성 이해하기",
+          description: "아이가 어디서 왜 막히는지 함께 분석하고, 우리 아이 속도에 맞는 로드맵을 보호자님과 함께 설계합니다"
         },
         {
           icon: Puzzle,
-          name: "학습 방법 개선",
-          description: "효과적인 학습 전략과 기법을 알려드려요"
+          name: "집에서 적용하는 법 배우기",
+          description: "전문가가 현장에서 쓰는 방법을, 보호자님이 집에서 바로 적용하실 수 있게 알려드립니다"
         },
         {
           icon: Clock,
-          name: "학습 루틴 관리",
-          description: "지속 가능한 학습 습관 형성을 도와드려요"
+          name: "지속되는 교육 및 양육 루틴 만들기",
+          description: "온 가족이 지치지 않는 선에서, 우리 집에 맞는 학습 루틴을 함께 잡아드립니다"
         },
         {
           icon: Star,
-          name: "동기 부여",
-          description: "학습에 대한 흥미와 자신감을 키워드려요"
+          name: "아이 동기 다루는 법",
+          description: "아이가 하기 싫어할 때 어떻게 말을 걸고 반응해야 할지, 구체적인 대응법을 익히실 수 있습니다"
         }
       ],
-      targetAudience: ["학습 속도가 느린 아이들", "학습 방법을 찾는 학부모", "기초 학력이 부족한 학생들"],
-      expectedResults: ["개별 맞춤 학습법 습득", "학습 자신감 향상", "꾸준한 학습 습관 형성"]
+      targetAudience: ["아이 학습이나 교육을 어떻게 도와야 할지 막막한 보호자", "학원이나 치료실을 다니게 해도, 집에서는 뭘 해야 할지 모르겠는 보호자", "아이 발달 속도에 맞는 방법을 찾고 싶은 보호자"],
+      expectedResults: ["우리 아이에게 맞는 양육법을 보호자가 알게 됩니다", "집에서 바로 적용할 수 있는 방법을 익힙니다", "매 회차 시도한 것을 점검하며 방향을 다듬어갑니다"],
+      note: "셸메이트는 보호자 코칭 서비스입니다. 전문가가 아이를 직접 지도하지 않고, 보호자가 아이를 잘 도울 수 있도록 함께 설계합니다."
     },
     {
       id: "behavior",
@@ -128,61 +128,28 @@ export default function ConsultationFieldsSection() {
       expectedResults: ["정서적 안정감 확보", "자존감과 자신감 향상", "건강한 사회적 관계 형성"]
     },
     {
-      id: "family",
-      icon: Users,
-      title: "가족 상담",
-      subtitle: "함께 성장하기",
-      description: "가족 전체가 함께 성장할 수 있는 소통 방법과 양육 전략을 제공합니다",
-      color: "from-green-700 to-emerald-800",
-      bgColor: "from-green-50 to-emerald-100",
-      services: [
-        {
-          icon: Home,
-          name: "가족 소통 개선",
-          description: "건강한 가족 대화법과 소통 기술을 배워요"
-        },
-        {
-          icon: Heart,
-          name: "양육 스트레스 관리",
-          description: "부모의 심리적 부담을 덜어드려요"
-        },
-        {
-          icon: Users,
-          name: "형제자매 관계",
-          description: "가족 구성원 간의 조화로운 관계를 만들어가요"
-        },
-        {
-          icon: Lightbulb,
-          name: "양육 전략 수립",
-          description: "우리 가족에게 맞는 양육 방침을 함께 만들어요"
-        }
-      ],
-      targetAudience: ["양육에 어려움을 겪는 부모", "가족 갈등이 있는 가정", "형제자매 간 문제가 있는 가족"],
-      expectedResults: ["가족 간 소통 개선", "양육 스트레스 감소", "조화로운 가족 관계 형성"]
-    },
-    {
       id: "career",
       icon: GraduationCap,
-      title: "진로 지도",
+      title: "진로 및 학습 지도",
       subtitle: "미래 설계하기",
-      description: "아이의 특성과 흥미를 바탕으로 적합한 진로를 함께 탐색해봅니다",
+      description: "아이의 특성과 흥미를 바탕으로 적합한 학습 방법과 진로 방향을 함께 탐색해봅니다",
       color: "from-emerald-700 to-green-800",
       bgColor: "from-emerald-50 to-green-50",
       services: [
         {
           icon: Target,
-          name: "적성 탐색",
-          description: "아이의 강점과 관심사를 발견해요"
+          name: "적성 및 진로 탐색",
+          description: "아이의 강점과 관심사를 발견하고, 구체적이고 실현 가능한 진로 로드맵을 세워요"
         },
         {
           icon: GraduationCap,
-          name: "진로 계획",
-          description: "구체적이고 실현 가능한 진로 로드맵을 세워요"
+          name: "개별 학습 계획",
+          description: "아이의 학습 특성을 파악하여 맞춤형 학습 로드맵을 제공해요"
         },
         {
           icon: Lightbulb,
-          name: "진로 체험",
-          description: "다양한 직업 세계를 간접 체험할 수 있도록 도와드려요"
+          name: "학습 방법 개선",
+          description: "효과적인 학습 전략과 기법을 알려드려요"
         },
         {
           icon: Star,
@@ -190,8 +157,8 @@ export default function ConsultationFieldsSection() {
           description: "단계별 목표를 세워 차근차근 준비해나가요"
         }
       ],
-      targetAudience: ["진로에 고민이 많은 청소년", "자녀 진로가 걱정인 부모", "특수교육 대상 학생들"],
-      expectedResults: ["진로 방향성 확립", "구체적인 진로 계획 수립", "진로에 대한 자신감 향상"]
+      targetAudience: ["진로에 고민이 많은 청소년", "자녀 진로가 걱정인 부모", "특수교육 대상 학생들", "학습 속도가 느린 아이들이 걱정되는 학부모", "아이에게 맞는 학습 방법을 찾는 학부모"],
+      expectedResults: ["진로 방향성 확립", "구체적인 진로 계획 수립", "진로에 대한 자신감 향상", "개별 맞춤 학습법 습득"]
     }
   ]
 
@@ -218,7 +185,7 @@ export default function ConsultationFieldsSection() {
 
         {/* 상담 분야 탭 */}
         <Tabs value={activeField} onValueChange={setActiveField} className="w-full">
-          <TabsList className="grid w-full grid-cols-3 md:grid-cols-5 mb-12 h-auto p-1 bg-white shadow-lg rounded-2xl">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-12 h-auto p-1 bg-white shadow-lg rounded-2xl">
             {consultationFields.map((field) => {
               const IconComponent = field.icon
               return (
@@ -255,13 +222,13 @@ export default function ConsultationFieldsSection() {
                         
                         <div>
                           <h3 className="text-2xl font-bold text-gray-900 mb-2">{field.title}</h3>
-                          <p className="text-lg font-medium text-gray-600 mb-4">{field.subtitle}</p>
+                          <p className="text-lg font-bold text-gray-600 mb-4">{field.subtitle}</p>
                           <p className="text-gray-700 leading-relaxed">{field.description}</p>
                         </div>
 
                         <div className="space-y-4">
                           <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">이런 분들께 추천해요</h4>
+                            <h4 className="font-semibold text-gray-800 mb-2"> 이런 보호자님께 추천해요</h4>
                             <ul className="space-y-1">
                               {field.targetAudience.map((audience, index) => (
                                 <li key={index} className="flex items-center space-x-2">
@@ -283,6 +250,9 @@ export default function ConsultationFieldsSection() {
                               ))}
                             </ul>
                           </div>
+                          {field.note && (
+                            <p className="text-xs font-bold leading-relaxed border-t border-green-200 pt-3" style={{ color: "#1b4128" }}>{field.note}</p>
+                          )}
                         </div>
                       </CardContent>
                     </Card>

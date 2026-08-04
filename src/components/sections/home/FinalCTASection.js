@@ -61,7 +61,7 @@ export default function FinalCTASection() {
     {
       icon: Shield,
       title: "안전한 상담 환경",
-      description: "개인정보 완벽 보호"
+      description: "개인정보 보호를 최우선으로"
     },
     {
       icon: Users,
@@ -76,7 +76,7 @@ export default function FinalCTASection() {
   ]
 
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-br from-teal-500 via-emerald-500 to-teal-600 relative overflow-hidden" aria-label="앱 다운로드">
+    <section className="py-20 lg:py-32 bg-gradient-to-br from-teal-500 via-emerald-500 to-teal-600 relative overflow-hidden" aria-label="앱 다운로드 혹은 웹사이트 접속">
       {/* 배경 장식 요소들 */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
@@ -96,7 +96,7 @@ export default function FinalCTASection() {
               </Badge>
               <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
                 <Gift className="w-3 h-3 mr-1" />
-                첫 상담 무료
+                첫 상담 할인
               </Badge>
             </div>
 
@@ -187,15 +187,15 @@ export default function FinalCTASection() {
               <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm opacity-90">
                 <div className="flex items-center space-x-2">
                   <Star className="w-4 h-4 fill-current" />
-                  <span>5.0/5.0 평점</span>
+                  <span>1차 진단 후 설계되는 맞춤 커리큘럼</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Download className="w-4 h-4" />
-                  <span>0+ 다운로드</span>
+                  <span>4/8/12회 중장기 패키지</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Heart className="w-4 h-4 fill-current" />
-                  <span>100% 만족도</span>
+                  <span>회차별 기록 제공</span>
                 </div>
               </div>
             </div>
@@ -259,7 +259,7 @@ export default function FinalCTASection() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="w-4 h-4" />
-                  <span className="text-sm">평균 응답시간 5분</span>
+                  <span className="text-sm">전문가 수락 시 확정, 48시간 내 미응답 시 자동 취소</span>
                 </div>
               </div>
             </CardContent>

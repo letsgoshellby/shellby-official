@@ -192,9 +192,9 @@ export default function SolutionHeroSection() {
               </div>
               
               <div className="flex items-center space-x-4 text-sm text-gray-500">
-                <span>✨ 첫 상담 무료 체험</span>
+                <span>✨ 첫 상담 할인</span>
                 <span>•</span>
-                <span>🔒 개인정보 완벽 보호</span>
+                <span>🔒 개인정보 보호를 최우선으로</span>
               </div>
             </div>
           </div>

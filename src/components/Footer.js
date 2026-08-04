@@ -33,7 +33,7 @@ export default function Footer() {
             <h3 className="font-semibold text-gray-800">서비스</h3>
             <ul className="space-y-2">
                 <li>
-                <Link href="/solution" className="text-sm text-gray-600 hover:text-teal-600 transition-colors">
+                <Link href="https://shellmate.letsgoshellby.com/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-teal-600 transition-colors">
                   솔루션
                 </Link>
               </li>

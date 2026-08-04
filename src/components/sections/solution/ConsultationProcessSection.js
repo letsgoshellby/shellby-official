@@ -23,9 +23,9 @@ export default function ConsultationProcessSection() {
     {
       step: "01",
       icon: Download,
-      title: "앱 다운로드",
+      title: "앱 다운로드 혹은 웹사이트 접속",
       subtitle: "간편하게 시작하기",
-      description: "App Store나 Google Play에서 셸비의 앱 셸메이트를 다운로드하고 회원가입을 해주세요.",
+      description: "App Store나 Google Play에서 셸비의 앱 셸메이트를 다운로드하고 (혹은 웹사이트에 접속하고) 회원가입해 주세요.",
       details: [
         "무료 다운로드 및 가입",
         "간단한 본인 인증",
@@ -38,45 +38,44 @@ export default function ConsultationProcessSection() {
     {
       step: "02",
       icon: UserPlus,
-      title: "상담 신청",
-      subtitle: "나의 상황 알리기",
-      description: "상담이 필요한 분야와 현재 상황을 간단히 작성해 주세요.",
+      title: "전문가 고르기",
+      subtitle: "내가 직접 선택합니다",
+      description: "경력, 자격, 전문 분야, 후기, 상담료를 비교해 보고, 마음이 가는 전문가를 직접 고르세요.",
       details: [
-        "상담 분야 선택 (학습, 행동, 정서 등)",
-        "현재 상황과 고민 내용 작성",
-        "선호하는 상담 방식 선택"
+        "자격 검증을 마친 전문가 목록",
+        "프로필과 실제 후기 확인",
       ],
-      time: "5분 소요",
+      time: "둘러보기는 무료",
       color: "from-green-600 to-green-800",
       bgColor: "from-green-50 to-green-100"
     },
     {
       step: "03",
       icon: Users,
-      title: "전문가 매칭",
-      subtitle: "딱 맞는 선생님 찾기",
-      description: "아이의 상황에 가장 적합한 전문가를 찾아보세요.",
+      title: "상담 예약하기",
+      subtitle: "시간을 정하고 확정하기",
+      description: "선택한 전문가의 가능한 시간 중 원하는 시간을 고르고, 현재 고민을 적어 신청하세요.",
       details: [
-        "검증된 전문가 리스트 확인",
-        "전문가 프로필과 후기 확인",
-        "마음에 드는 전문가 직접 선택"
+        "전문가의 가능 시간 중 선택",
+        "현재 상황과 고민 내용 작성",
+        "전문가가 수락하면 예약 확정"
       ],
-      time: "즉시",
+      time: "신청 3분 · 48시간 내 확정",
       color: "from-emerald-600 to-green-700",
       bgColor: "from-emerald-50 to-green-50"
     },
     {
       step: "04",
       icon: MessageCircle,
-      title: "상담 시작",
-      subtitle: "따뜻한 만남",
-      description: "예약한 시간에 전문가와 1:1 상담을 시작해요. 편안한 마음으로 대화해보세요.",
+      title: "1:1 코칭 시작",
+      subtitle: "우리 아이만의 방법 설계하기",
+      description: "예약한 시간에 전문가와 화상으로 만나, 우리 아이에게 맞는 방법을 함께 만들어갑니다.",
       details: [
-        "화상, 음성, 채팅 중 선택",
-        "50분간 충분한 상담 시간",
-        "상담 후 피드백과 다음 계획 수립"
+        "1회차 — 진단 및 맞춤 커리큘럼 설계",
+        "2회차부터 — 커리큘럼에 따라 진행하고 회차별 기록 공유",
+        "50분 코칭 (5분 남으면 알림 · 최대 70분)"
       ],
-      time: "50분 상담",
+      time: "50분 코칭",
       color: "from-green-700 to-emerald-800",
       bgColor: "from-green-50 to-emerald-100"
     }
@@ -90,7 +89,7 @@ export default function ConsultationProcessSection() {
     // },
     {
       icon: Shield,
-      title: "완벽한 개인정보 보호",
+      title: "개인정보 보호를 최우선으로",
       description: "모든 상담 내용은 안전하게"
     },
     {
