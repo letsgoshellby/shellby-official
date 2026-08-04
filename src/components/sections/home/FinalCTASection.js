@@ -55,7 +55,7 @@ export default function FinalCTASection() {
   const benefits = [
     {
       icon: Clock,
-      title: "24시간 언제든지",
+      title: "50분 상담",
       description: "원하는 시간에 편리하게"
     },
     {

@@ -79,10 +79,6 @@ export default function FAQSection() {
 
   const popularFAQs = [
     {
-      question: "첫 상담은 정말 무료인가요?",
-      answer: "네, 맞습니다! 첫 번째 상담은 15분간 무료로 체험하실 수 있어요."
-    },
-    {
       question: "상담 내용이 외부에 노출될 가능성은 없나요?",
       answer: "절대 그렇지 않습니다. 모든 상담 내용은 암호화되어 안전하게 보관됩니다."
     },

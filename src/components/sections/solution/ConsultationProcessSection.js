@@ -29,14 +29,14 @@ export default function ConsultationProcessSection() {
       details: [
         "무료 다운로드 및 가입",
         "간단한 본인 인증",
-        "개인정보는 안전하게 보호됩니다"
+        // "개인정보는 안전하게 보호됩니다"
       ],
       time: "2분 소요",
-      color: "from-blue-400 to-blue-500",
-      bgColor: "from-blue-50 to-indigo-50"
+      color: "from-green-700 to-green-900",
+      bgColor: "from-green-50 to-emerald-50"
     },
     {
-      step: "02", 
+      step: "02",
       icon: UserPlus,
       title: "상담 신청",
       subtitle: "나의 상황 알리기",
@@ -47,23 +47,23 @@ export default function ConsultationProcessSection() {
         "선호하는 상담 방식 선택"
       ],
       time: "5분 소요",
-      color: "from-purple-400 to-purple-500", 
-      bgColor: "from-purple-50 to-emerald-50"
+      color: "from-green-600 to-green-800",
+      bgColor: "from-green-50 to-green-100"
     },
     {
       step: "03",
       icon: Users,
       title: "전문가 매칭",
       subtitle: "딱 맞는 선생님 찾기",
-      description: "AI가 분석한 결과를 바탕으로 가장 적합한 전문가를 추천해드려요.",
+      description: "아이의 상황에 가장 적합한 전문가를 찾아보세요.",
       details: [
-        "AI 기반 맞춤 매칭",
+        "검증된 전문가 리스트 확인",
         "전문가 프로필과 후기 확인",
         "마음에 드는 전문가 직접 선택"
       ],
-      time: "즉시 추천",
-      color: "from-green-400 to-green-500",
-      bgColor: "from-green-50 to-emerald-50"
+      time: "즉시",
+      color: "from-emerald-600 to-green-700",
+      bgColor: "from-emerald-50 to-green-50"
     },
     {
       step: "04",
@@ -77,17 +77,17 @@ export default function ConsultationProcessSection() {
         "상담 후 피드백과 다음 계획 수립"
       ],
       time: "50분 상담",
-      color: "from-emerald-400 to-emerald-500",
-      bgColor: "from-emerald-50 to-teal-50"
+      color: "from-green-700 to-emerald-800",
+      bgColor: "from-green-50 to-emerald-100"
     }
   ]
 
   const processFeatures = [
-    {
-      icon: Clock,
-      title: "24시간 예약 가능",
-      description: "내가 원하는 시간에 맞춰서"
-    },
+    // {
+    //   icon: Clock,
+    //   title: "24시간 예약 가능",
+    //   description: "내가 원하는 시간에 맞춰서"
+    // },
     {
       icon: Shield,
       title: "완벽한 개인정보 보호",
@@ -110,7 +110,7 @@ export default function ConsultationProcessSection() {
       <div className="container mx-auto px-4">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-blue-200 text-blue-700">
+          <Badge variant="outline" className="mb-4 border-green-800 text-green-800">
             <Play className="w-3 h-3 mr-1" />
             이용 방법
           </Badge>
@@ -127,7 +127,7 @@ export default function ConsultationProcessSection() {
         {/* 프로세스 단계들 */}
         <div className="relative max-w-6xl mx-auto mb-20">
           {/* 연결선 (데스크톱) */}
-          <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-green-200 to-emerald-200"></div>
+          <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-green-200 via-green-300 to-emerald-200"></div>
           
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => {
@@ -167,7 +167,7 @@ export default function ConsultationProcessSection() {
                       <div className="space-y-2">
                         {step.details.map((detail, detailIndex) => (
                           <div key={detailIndex} className="flex items-center space-x-2">
-                            <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                            <CheckCircle className="w-4 h-4 text-green-700 flex-shrink-0" />
                             <span className="text-xs text-gray-600">{detail}</span>
                           </div>
                         ))}
@@ -199,13 +199,13 @@ export default function ConsultationProcessSection() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {processFeatures.map((feature, index) => {
               const IconComponent = feature.icon
               return (
                 <Card key={index} className="bg-white border-gray-200 hover:shadow-lg transition-all duration-300 text-center">
                   <CardContent className="p-6 space-y-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-400 rounded-2xl flex items-center justify-center mx-auto">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-700 to-green-900 rounded-2xl flex items-center justify-center mx-auto">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -220,7 +220,7 @@ export default function ConsultationProcessSection() {
         </div>
 
         {/* 시작하기 CTA */}
-        <Card className="bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 border-0 shadow-2xl">
+        <Card className="border-0 shadow-2xl" style={{ background: "linear-gradient(to right, #1b4128, #2d6a4f, #1b4128)" }}>
           <CardContent className="p-8 lg:p-12 text-white text-center">
             <div className="max-w-3xl mx-auto space-y-6">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto">
@@ -249,14 +249,6 @@ export default function ConsultationProcessSection() {
                 </Button>
               </div>
               
-              <div className="pt-4 space-y-2">
-                <p className="text-sm opacity-80">
-                  ✨ 첫 상담은 무료로 체험해보실 수 있어요
-                </p>
-                <p className="text-xs opacity-70">
-                  부담 없이 시작해보세요. 언제든 그만둘 수 있습니다.
-                </p>
-              </div>
             </div>
           </CardContent>
         </Card>
